@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fci SYSTEM "ASP_DTD.dtd">
+<fci>
+    <dog_breeds>
+        <dog_breed standart_number="SN148" group="GR4" section="S4.1"> 
+            <name>Дакел</name>
+            <country country_code="GER"  capital="Berlin" official_language="German" time_zone = "UTC/GMT +1 hour"  currency="Euro">
+                <country_name>Гемрания</country_name>
+                <country_continent>Европа</country_continent>
+                <country_government_type>Демокративна и федерална република</country_government_type>
+            </country>
+            <year_of_establishment>2001</year_of_establishment>
+            <head>Издължена когато се гледа в профил и отгоре. Изострена равномерно към носната гъба, но без да става остра. Надочните дъги са ясно изразени. Хрущялите на носа и горната линя на муцуната са дълги и тесни.</head>
+            <teeth>
+                Горната и долната челюсти са добре развити. Ножична захапка, равна и плътно затворена. Идеален, пълен постав от 42 зъба в хармония с изискванията за устата на кучето, със здрави резци точно прилепени един към друг. 
+            </teeth>
+            <ears>
+                Високо поставени, не много напред. Достатъчно дълги, но не прекалено. Заоблени, без да са тесни, остри или прегънати. Подвижни, с вътрешен ръб прилепнал по бузите.
+                
+            </ears>
+            <eyes>
+                Средно големи, овални, поставени доста раздалечени, едно от друго, с ясно, енергично и приятелско изражение. Не са пронизителни. Цветът е светло, тъмно червеникавокафяво до кафяво-черно при всички цветове на козината.
+                Разноцветни, рибeни или бисерни очи при пъстрите кучета са допустими, но нежелани.
+            </eyes>
+            <tail>
+                Поставена не много високо, носи се като продължение на горната линия.
+                Приема се лека кривина в последната третина на опашката.
+            </tail>
+            <colors>
+                <primary_color> черно с кафеви петна или изцяло черно</primary_color>
+                <secondary_color>кафяво с червени петна или изцяло кафяво</secondary_color>
+                <prefered_color>кафевият цвят се предпочита</prefered_color>
+            </colors>
+            <fur>
+                Косъм: Къс, гъст, лъскав, подобаващо гладък, твърд и стегнат. Нито една част от тялото не трябва да е лишена от козина. 
+                Опашка: С фини косми, цялостно, не толкова обилно окосмена. Малко по-дълги покривни косми по долната част не са недостатък.
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!304</image>
+            <size>
+                <males_size>39 см. обиколка на гръдния кош</males_size>
+                <females_size>37 см. обиколка на гръдния кош</females_size>
+            </size>
+            <weight>
+                <males_weight>9.25 кг.</males_weight>
+                <females_weight>9.05 кг.</females_weight>
+            </weight>
+        </dog_breed>
+        <dog_breed standart_number="SN255" group="GR5" section="S5.5"> 
+            <name>Акита</name>
+            <country country_code="JAP"  capital="Tokyo" official_language="Japanese" time_zone = "UTC/GMT +9 hours"  currency="Japanese Yenna">
+                <country_name>Япония</country_name>
+                <country_continent>Азия</country_continent>
+                <country_government_type>Конституционна монархия</country_government_type>
+            </country>
+            <year_of_establishment>2000</year_of_establishment>
+            <head>Акита ину имат здраво и набито телосложение. Тялото им е леко издължено, а главата е тежка. Видът им показва доста голям респект.
+            </head>
+            <teeth>
+                Горната и долната челюсти са добре развити. Ножична захапка, равна и плътно затворена. Идеален, пълен постав от 42 зъба в хармония с изискванията за устата на кучето, със здрави резци точно прилепени един към друг. 
+            </teeth>
+            <ears>
+                Ушите са тип "вълчи".  Не са много големи, но са доста дебели и плътни, с широка основа.
+                
+                По форма са триъгълни, като към върха са леко заоблени. Стоят изправени и наклонени леко напред.
+                
+            </ears>
+            <eyes>
+                Очите са малки и с почти триъгълна форма. Тя се дължи на издигането на външният очен ъгъл. Раздалечени са едно спрямо друго.
+                
+            </eyes>
+            <tail>
+                Имат характерна завита пухкава опашка.
+                
+                Завиването е под формата на пръстен, понякога e спирално навита, допираща се до гърба и бедрата.
+            </tail>
+            <colors>
+                <primary_color> Едноцветна - бял. При белите Акита няма маска. Може също тигрова </primary_color>
+                <secondary_color>Петниста оркаска</secondary_color>
+                <prefered_color>Едноцветен бял с жълти петна или черни</prefered_color>
+            </colors>
+            <fur>
+                Кучетата от тази порода имат двуслойна пухкава козина, която се състои от груб студоустойчив външен слой. Подкосмието е гъсто и меко.
+                
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!311</image>
+            <size>
+                <males_size>65-70 см. в холката</males_size>
+                <females_size>63 см. в холката</females_size>
+            </size>
+            <weight>
+                <males_weight>45-50 кг.</males_weight>
+                <females_weight>40-45 кг.</females_weight>
+            </weight>
+        </dog_breed>
+    </dog_breeds>
+    <sections>
+        <section section_id="S4.1">Дакели с работен изпит</section>
+        <section section_id="S5.5">Азиатски шпицове и подобни породи</section>
+    </sections>
+    <groups>
+        <group group_code="GR4">ДАКЕЛИ</group>
+        <group group_code="GR5">ШПИЦОВЕ И ДРУГИ ПРИМИТИВНИ ПОРОДИ</group>
+    </groups>
+</fci>

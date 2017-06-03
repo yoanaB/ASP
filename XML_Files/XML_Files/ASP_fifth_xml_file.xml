@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fci SYSTEM "ASP_DTD.dtd">
+<fci>
+    <dog_breeds>
+          
+        <dog_breed standart_number="SN207" group="GR9" section="S9.8">
+            <name>Пекинез</name>
+            <country country_code="CHN" capital="Beijing" official_language="Chinesse" time_zone = "UTC/GMT +8 hours"  currency="Chinese Yuan">
+                <country_name>Китай</country_name>
+                <country_continent>Азия</country_continent>
+                <country_government_type>Комунистически щат</country_government_type>
+            </country>
+            <year_of_establishment>1904</year_of_establishment>
+            <head>
+                Голяма, пропорционално по-широка, отколкото дълбока.
+                Череп: Широк, широк и плосък между очите; не купловиден; широк между ушите.
+                Стоп: Ясно изразен.
+            </head>
+            <teeth>
+                Равни устни, без да се показват зъбите или езика. Здравата долна челюсът е от съществено значение.
+            </teeth>
+            <ears>
+                Със сърцевидна форма, поставени на нивото на черепа, носени плътно по главата и недостигащи под линията на муцуната. Дълъг пищен украсяващ косъм.
+            </ears>
+            <eyes>
+                Големи, ясни, кръгли, тъмни и сияещи. Без видими очни проблеми.
+            </eyes>
+            <tail>
+                Високо поставена, носи се плътно прилепнала, леко извита върху едната от двете страни на гърба. Дълъг украсяващ косъм.
+            </tail>
+            <colors>
+                <primary_color> Всички цветове и петна се допустими и еднакво ценени, с изключение на албинизъм или чевенокафяв цвят</primary_color>
+                <secondary_color> Всички цветове и петна се допустими и еднакво ценени, с изключение на албинизъм или чевенокафяв цвят</secondary_color>
+                <prefered_color> Всички цветове и петна се допустими и еднакво ценени, с изключение на албинизъм или чевенокафяв цвят</prefered_color>
+            </colors>
+            <fur>
+                Косъм: Козината е дълга, права, с обилна грива, простираща се извън холката, образуваща пелерина около шията. Груб покривен косъм с дебел, по-мек подкосъм. Украсяващ косъм по ушите, задната страна на крайниците, опашката и пръстите.Дължината и количеството на козината не трябва да помрачават очертанията на тялото.
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!291</image>
+            <size>
+                <males_size>При тази порода единствено теглото се взима под внимание</males_size>
+                <females_size></females_size>
+            </size>
+            <weight>
+                <males_weight>5 кг</males_weight>
+                <females_weight>5.4 кг</females_weight>
+            </weight>
+        </dog_breed>
+        
+        <dog_breed standart_number="SN269" group="GR10" section="S10.1">
+            <name>Салуки (Персийска хрътка)</name>
+            <country country_code="IRN"  capital="Tehran" official_language="Persian" time_zone = "UTC/GMT +3:30 hours"  currency="Rial">
+                <country_name>Иран</country_name>
+                <country_continent>Азия</country_continent>
+                <country_government_type>Унитарна ислямистка република</country_government_type>
+            </country>
+            <year_of_establishment>1985</year_of_establishment>
+            <head>
+                Главата е доста дълга, но тясна. Имат масивна и плътна муцуна. Шията е дълга и добре замускулена.
+            </head>
+            <teeth>
+                Равни устни, без да се показват зъбите или езика. Здравата долна челюсът е от съществено значение.
+            </teeth>
+            <ears>
+                Ушите са дълги и висят близо до главата. Покрити са с дълги косми.
+           </ears>
+            <eyes>
+                Очите са големи и овални.
+            </eyes>
+            <tail>
+                Имат дълга, ниско поставена опашка с малка извивка накрая.
+            </tail>
+            <colors>
+                <primary_color> Бяла,Кремава,Сива,Черна,Светло кафява,Светло бежава</primary_color>
+                <secondary_color> Златиста,Червена,Трицветна – бяло-черно-кафява; сребристо-кафяво-шоколадова,На петна – пясъчно-жълти или червено-кафяви
+                    </secondary_color>
+                <prefered_color> Всички цветове и петна се допустими и еднакво ценени</prefered_color>
+            </colors>
+            <fur>
+                Със своя външен вид Салукито изразява грация и елегантност.
+                Има мека и гладка космена покривка. Козината е плътно прилепнала по главата, тялото и предната част на крайниците. 
+                Сравнително по – дълги са космите по ушите, задната част на крайниците и опашката.
+             </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!289</image>
+            <size>
+                <males_size>58-71 см</males_size>
+                <females_size> 57-59 см</females_size>
+            </size>
+            <weight>
+                <males_weight>15-35 кг</males_weight>
+                <females_weight>15-28 кг</females_weight>
+            </weight>
+        </dog_breed>
+        
+    </dog_breeds>
+    <sections>
+        
+        <section section_id="S9.8"> Японски хин и пекинез</section>
+        <section section_id="S10.1">Дългокосмести хрътки</section>
+    </sections>
+    <groups>
+        
+        <group group_code="GR9">КУЧЕТА ЗА КОМПАНИЯ И ДЕКОРАТИВНИ (ТОЙ)</group>
+        <group group_code="GR10">ХРЪТКИ</group>
+    </groups>
+    
+</fci>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fci SYSTEM "ASP_DTD.dtd">
+<fci>
+    <dog_breeds>
+        <dog_breed standart_number="SN144" group="GR2" section="S2.2">
+            <name>Боксер</name>
+            <country country_code="GER"  capital="Berlin" official_language="German" time_zone = "UTC/GMT +1 hour"  currency="Euro">
+                <country_name>Гемрания</country_name>
+                <country_continent>Европа</country_continent>
+                <country_government_type>Демокративна и федерална република</country_government_type>
+            </country>
+            <year_of_establishment>1988</year_of_establishment>
+            <head>
+                Главата е добре развита и мощна с издадена напред долна челюст (прогения) и притъпена муцуна.
+            </head>
+            <teeth>  
+                Челюстите са със здрави и бели зъби, правилно разположени, добре вкоренени в развитите челюсти. Захапката е ножицообразна – резците на горната челюст леко покриват резците на долната челюст, като при това се допират един до друг. Допуска се клещовидна захапка. Пастирите са предпочитали именно такава захапка. 
+                Изисква се пълна зъбна формула, допуска се отсъствие на двата първи премоляра (2 х Р1), трети молари (М3) не се вземат в предвид.
+            </teeth>
+            <ears>
+                Ушите са високо поставени и придават буден и прям вид на Боксера.
+            </ears>
+            <eyes>
+                Имат средно големи очи, които не са дълбоко поставени и не са много изпъкнали.
+            </eyes>
+            <tail>
+                Опашката е високо поставена, насочена нагоре. Често се срещат боксери без 
+                опашки и е много забавно да се види как въртят цялата си задница.
+                
+            </tail>
+            <colors>
+                <primary_color>Жълто - кафяв и жълто - червеникав</primary_color>
+                <secondary_color>Тигров или бял</secondary_color>
+                <prefered_color> И двете разновидности са приемливи</prefered_color>
+            </colors>
+            <fur> 
+                Имат гладка и лъскава космена покривка.
+                Космите са къси и прилягат плътно към тялото.
+                
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!308</image>
+            <size>
+                <males_size>57 - 64 см </males_size>
+                <females_size> 53 - 60 см</females_size>
+            </size>
+            <weight>
+                <males_weight>25 - 30 кг</males_weight>
+                <females_weight>25 - 30 кг</females_weight>
+            </weight>
+        </dog_breed>
+        <dog_breed standart_number="SN147" group="GR2" section="S2.2">
+            <name>Ротвайлер</name>
+            <country country_code="GER"  capital="Berlin" official_language="German" time_zone = "UTC/GMT +1 hour"  currency="Euro">
+                <country_name>Гемрания</country_name>
+                <country_continent>Европа</country_continent>
+                <country_government_type>Демокративна и федерална република</country_government_type>
+            </country>
+            <year_of_establishment>1986</year_of_establishment>
+            <head>
+                Имат добре замускулено тяло и средно голяма глава. Шията и крайниците са много здрави и добре замускулени. 
+                Кожата е доста дебела и еластична.
+            </head>
+            <teeth>  
+                Челюстите са със здрави и бели зъби, правилно разположени, добре вкоренени в развитите челюсти. Захапката е ножицообразна – резците на горната челюст леко покриват резците на долната челюст, като при това се допират един до друг. Допуска се клещовидна захапка. Пастирите са предпочитали именно такава захапка. 
+                Изисква се пълна зъбна формула, допуска се отсъствие на двата първи премоляра (2 х Р1), трети молари (М3) не се вземат в предвид.
+            </teeth>
+            <ears>
+                Ушите им не са много големи. Поставени са високо и висят.
+            </ears>
+            <eyes>
+                Очите са средно големи, с бадемовидна форма.
+            </eyes>
+            <tail>
+                Опашката е права в спокойно състояние.
+                Поставена е нито много ниско, нито много високо.
+                
+                
+            </tail>
+            <colors>
+                <primary_color>Черен с жълти петна</primary_color>
+                <secondary_color>Черен с вълти петна</secondary_color>
+                <prefered_color> Черен с жълти петна</prefered_color>
+            </colors>
+            <fur> 
+                Ротвайлерът има гъста, дебела и средно дълга (до къса) космена покривка. 
+                Космите са твърди и груби и прилягат плътно по тялото. 
+                Има развит подкосъм, който не трябва да прозира през покривните косми.
+                Ако кучето се отглежда при по – ниски температури се развива по – плътно подкосмие, което предпазва от студ и влага. На задните крайници космената покривка е малко по – дълга.
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!290</image>
+            <size>
+                <males_size>61 - 68 см  </males_size>
+                <females_size> 56 - 63 см</females_size>
+            </size>
+            <weight>
+                <males_weight>35 - 50 кг  </males_weight>
+                <females_weight>30 - 45 кг  </females_weight>
+            </weight>
+        </dog_breed>
+    </dog_breeds>
+    <sections>
+        <section section_id="S2.2">Догообразни</section>
+    </sections>
+    <groups>
+        <group group_code="GR2">ПИНЧЕРИ И ШНАУЦЕРИ. ДОГООБРАЗНИ И ШВЕЙЦАРСКИ ПАСТИРСКИ КУЧЕТА</group>
+    </groups>
+</fci>

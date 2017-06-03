@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fci SYSTEM "ASP_DTD.dtd">
+<fci>
+    <dog_breeds>
+        <dog_breed standart_number="SN11" group="GR3" section="S3.3"> 
+            <name>Бултериер</name>
+            <country  country_code="GBR" capital="London" official_language="British English" time_zone = "No UTC/GMT offset"  currency="Pound">
+                <country_name>Великобритания</country_name>
+                <country_continent>Европа</country_continent>
+                <country_government_type>Монархия</country_government_type>
+            </country>
+            <year_of_establishment>1987</year_of_establishment>
+            <head>Главата е дълга, силна и дълбока към края на муцуната, но не груба. Ако се гледа отпред тя е яйцевидна, добре запълнена без вдлъбнатини и неравности. 
+                Горната част на черепа е почти плоска между ушите. Профилната линия е леко изпъкнала, спускайки се от върха на черепа до края на носа, който трябва да бъде черен и извит надолу. 
+                Ноздрите са добре развити, долната челюст е дълбока и силна.</head>
+            <teeth>
+                Зъбите са здрави, чисти, силни, с добра големина, равномерно разположени с плътна захапка като ножица, 
+                освен това горния ред зъби плътно покрива долния без наличие на празнини и зъбите са поставени в челюстите вертикално. 
+                Устните са сухи и добре прилепнали. 
+            </teeth>
+            <ears>
+                Малки, тънки, близко разположени помежду си. Кучето трябва да държи ушите си изправени право нагоре.
+            </ears>
+            <eyes>
+                Изглеждат малки, тесни, косо поставени и триъгълни. Дълбоко поставени, черни или тъмнокафяви, с пронизващ блясък.
+                Разстоянието от края на носа до очите е видимо по-голямо отколкото от очите до края на черепа. Сини или частично сини очи са нежелателни.
+            </eyes>
+            <tail>
+                Къса, ниско поставена, носи се хоризонтално. Дебела в основата, изтъняваща към края.
+            </tail>
+            <colors>
+                <primary_color> Бяло</primary_color>
+                <secondary_color>Бяло с петна по главата</secondary_color>
+                <prefered_color>Бяло с петна по главата се предпочита</prefered_color>
+            </colors>
+            <fur>
+                Къса, гладка, добре прилепнала и твърда, с идеален блясък. Кожата е плътно стегната. През зимата може да се появи мек подкосъм.
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!325</image>
+            <size>
+                <males_size>Няма ограничение във височина но трябва да има строен вид</males_size>
+                <females_size>Няма ограничение във височина но трябва да има строен вид</females_size>
+            </size>
+            <weight>
+                <males_weight>Теглото не е от значение.Трябва да излъчва мощ.</males_weight>
+                <females_weight>Теглото не е от значение.Трябва да излъчва мощ.</females_weight>
+            </weight>
+        </dog_breed>
+        <dog_breed standart_number="SN286" group="GR3" section="S3.3"> 
+            <name>Стафорширски териер</name>
+            <country country_code="USA"  capital="Washington" official_language="American English"  time_zone = "UTC/GMT -5 hours"  currency="American Dollar">
+                <country_name>САЩ</country_name>
+                <country_continent>Северна Америка</country_continent>
+                <country_government_type>Конституционна федерална република</country_government_type>
+            </country>
+            <year_of_establishment>1997</year_of_establishment>
+            <head>Средно дълга, череп дълбок и широк, подчертани челюсти ,добре изразен стоп , високо поставени уши.</head>
+            <teeth>
+                Добре очертани челюсти.Долна челюст -силна с добра захапка.Бърни-прилепнали , не висящи.Горните зъби трябва плътно да опират върху външната част на долните зъби
+            </teeth>
+            <ears>
+                По-добре да не са купирани, но могат да бъдат и купирани.Некупираните уши трябва да бъдат къси и във вид на роза или полуизправени.Изцяло увисналите уши са дефект.
+            </ears>
+            <eyes>
+                Тъмни и кръгли ,поставени ниско върху черепа и добре раздалечени.Клепачните цепки не трябва да са депигментирани.
+            </eyes>
+            <tail>
+                Дебела в основата, изтъняваща към края.Къса в сравнение с ръста, ниско заловена, изтънява към съвсем тънък край ,не е извита, нито поставена на гърба.Не се купира.
+            </tail>
+            <colors>
+                <primary_color> Едноцветна на петна</primary_color>
+                <secondary_color>Двуцветна</secondary_color>
+                <prefered_color>Равнопоставени са</prefered_color>
+            </colors>
+            <fur>
+                Къса гъста, твърда на пипане и лъскава.
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!326</image>
+            <size>
+                <males_size>46-48 см</males_size>
+                <females_size>43-46 см.</females_size>
+            </size>
+            <weight>
+                <males_weight>Теглото трябва да е пропорционално на ръста.</males_weight>
+                <females_weight>Теглото трябва да е пропорционално на ръста.</females_weight>
+            </weight>
+        </dog_breed>
+    </dog_breeds>
+    <sections>
+        <section section_id="S3.3">Бултериери</section>
+    </sections>
+    <groups>
+        <group group_code="GR3"> ТЕРИЕРИ</group>
+    </groups>
+</fci>

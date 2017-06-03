@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fci SYSTEM "ASP_DTD.dtd">
+<fci>
+    <dog_breeds>
+        
+        <dog_breed standart_number="SN309" group="GR2" section="S2.2">
+            <name>Шарпей</name>
+            <country country_code="CHN" capital="Beijing" official_language="Chinesse" time_zone = "UTC/GMT +8 hours"  currency="Chinese Yuan">
+                <country_name>Китай</country_name>
+                <country_continent>Азия</country_continent>
+                <country_government_type>Комунистически Щат</country_government_type>
+            </country>
+            <year_of_establishment>1999</year_of_establishment>
+            <head>
+                Главата има крушовидна форма. Сравнително тежка е и закръглена в основата.
+                
+                
+                
+            </head>
+            <teeth>
+                Клещовидна захапна (допуска се и ножична).Като цяло не е масивна
+            </teeth>
+            <ears>
+                Ушите също са малки и имат форма на равнобедрен триъгълник. Върховете им са леко заоблени.
+                
+            </ears>
+            <eyes>
+                Очите са малки и с бадемовина форма.
+            </eyes>
+            <tail>
+                Опашката е много високо поставена. В резултат на това се е разпространил и изразът "Анусът на Шарпея гледа към небето".
+                В основата е по - дебела, а към върха изтънява. Може да се носи навита върху гърба или да е завита отстрани.
+                
+            </tail>
+            <colors>
+                <primary_color>Светло Бежав или червеникав</primary_color>
+                <secondary_color>Сив или кафяв</secondary_color>
+                <prefered_color> И двете разновидности са енакво ценени</prefered_color>
+            </colors>
+            <fur>
+                Породата се отличава с доста груба, права и къса козина. Грубата му кожа е била създадена с цел да го защитава от различни нападатели.
+                                
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!315</image>
+            <size>
+                <males_size>40-51 см</males_size>
+                <females_size> 38-49 см</females_size>
+            </size>
+            <weight>
+                <males_weight>20 кг</males_weight>
+                <females_weight>18-20 кг</females_weight>
+            </weight>
+        </dog_breed>
+        <dog_breed standart_number="SN328" group="GR2" section="S2.2">
+            <name>Кавказка овчарка</name>
+            <country country_code="RUS" capital="Moscow" official_language="Russian" time_zone = "UTC/GMT +3 hours"  currency="Russian Ruble">
+                <country_name>Русия</country_name>
+                <country_continent>Азия</country_continent>
+                <country_government_type>Федерация</country_government_type>
+            </country>
+            <year_of_establishment>1996</year_of_establishment>
+            <head>
+                Череп: Масивна с широка черепна част и силно развити скули глава. Широко чело, плосък, разделен на две половини от неголяма бразда.
+                Стоп: Стопът не е отчетливо изразен.                
+                
+                
+            </head>
+            <teeth>
+                Бели, здрави, добре развити, плътно прилегнали един към друг, без видими празнини. Резците са равно разположени в основата – ножична захапка.
+            </teeth>
+            <ears>
+                Висящи, високо поставени, късо купирани.                
+            </ears>
+            <eyes>
+                Тъмни, малки, с овална форма, дълбоко поставени..
+            </eyes>
+            <tail>
+                Високо поставена, ниско спусната, достигаща скакателните стави. Сърповидна, на кука или навита в кръг. Допуска се купиране на опашката.
+                
+            </tail>
+            <colors>
+                <primary_color>Зонарно сиви</primary_color>
+                <secondary_color>Зонарно черни</secondary_color>
+                <prefered_color> И двете разновидности са енакво ценени</prefered_color>
+            </colors>
+            <fur>
+                Косъмът е прав, груб, със силно развит подкосъм, по-светъл на цвят. По главата и предната част на крайниците, косъма е по-къс и плътно прилепнал.
+                
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!316</image>
+            <size>
+                <males_size>над 65 см</males_size>
+                <females_size> над 62 см</females_size>
+            </size>
+            <weight>
+                <males_weight>над 35 кг</males_weight>
+                <females_weight>над 34 кг</females_weight>
+            </weight>
+        </dog_breed>
+    </dog_breeds>
+    <sections>
+        
+        <section section_id="S2.2">Догообразни</section>
+    </sections>
+    <groups>
+        <group group_code="GR2">ПИНЧЕРИ И ШНАУЦЕРИ. ДОГООБРАЗНИ И ШВЕЙЦАРСКИ ПАСТИРСКИ КУЧЕТА</group>
+    </groups>
+    
+</fci>

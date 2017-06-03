@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fci SYSTEM "ASP_DTD.dtd">
+<fci>
+    <dog_breeds>
+        <dog_breed standart_number="SN120" group="GR7" section="S7.2">
+            <name>Ирландски сетер</name>
+            <country country_code="IRL"  capital="Dublin" official_language="British English/Irish" time_zone = "No UTC/GMT offset"  currency="Pound">
+                <country_name>Ирландия</country_name>
+                <country_continent>Европа</country_continent>
+                <country_government_type>Част от монархията Великобритания</country_government_type>
+            </country>
+            <year_of_establishment>1878</year_of_establishment>
+            <head>
+                Издължена и суха, без да е груба при ушите. Муцуната и черепа са с еднаква дължина и с паралелни линии.
+            </head>
+            <teeth>
+                Челюстите са с определено еднаква дължина.Захапката е ножична
+            </teeth>
+            <ears>
+                Средно големи, с фина структура, разположени ниско и доста назад, висящи, без гънки, плътно по главата.
+            </ears>
+            <eyes>
+                Тъмен лешник или тъмно кафеви, без да бъдат много големи.
+            </eyes>
+            <tail>
+                Умерено дълга, пропорционална на размера на тялото, поставена по-скоро ниско, силна в основата, изтъняваща до фина на върха.
+                Носи се на или под нивото на гърба.
+            </tail>
+            <colors>
+                <primary_color>Едноцветна махагоновотъмночервена</primary_color>
+                <secondary_color>Едноцветна махагоновотъмночервена с бели петна по гърдите и лицевата част</secondary_color>
+                <prefered_color>Едноцветна махагоновотъмночервена</prefered_color>
+            </colors>
+            <fur> По главата, предната част на краката и краищата на ушите - къс и фин; върху останалите части на тялото и краката умерено дълъг, гладък и толкова свободен, колкото е възможно.
+                Покривните косми по външната част на ушите са дълги и коприненоподобни; по задната част на предните и задните крайници, дълги и фини.
+                Наличната козина по корема образува ресни, които могат да се разпрострат до гърдите и гърлото.
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!297</image>
+            <size>
+                <males_size>58-67 см. в холката</males_size>
+                <females_size>55-62 см. в холката</females_size>
+            </size>
+            <weight>
+                <males_weight>25-30 кг.</males_weight>
+                <females_weight>20-25 кг.</females_weight>
+            </weight>
+        </dog_breed>
+        <dog_breed standart_number="SN143" group="GR2" section="S2.1">
+            <name>Доберман</name>
+            <country country_code="GER"  capital="Berlin" official_language="German" time_zone = "UTC/GMT +1 hour"  currency="Euro">
+		        <country_name>Гемрания</country_name>
+		        <country_continent>Европа</country_continent>
+		        <country_government_type>Демокративна и федерална република</country_government_type>
+		    </country>
+            <year_of_establishment>1994</year_of_establishment>
+            <head>
+               ЧЕРЕПНА ЧАСТ: Силна и в хармония с тялото. Гледана отгоре, главата има формата на тъп клин.
+            </head>
+            <teeth>
+               Силни широки горна и долна челюст, ножицовидна захапка, 42 правилно разположени зъба с нормални размери.
+            </teeth>
+            <ears>
+               Ушите, които са високо поставени, се носят изправени и купирани с дължина в съответствие с пропорциите на главата. 
+			   В държави, където купирането не е разрешено, некупираните уши се приемат равностойно.
+            </ears>
+            <eyes>
+                Средно големи, овални и тъмни на цвят. По-светли тонове се разрешават при кафевите кучета. Плътно затварящи се клепачи. Клепачите трябва да са покрити с козина. 
+				Силно нежелана е плешивост около ръба на окото.
+            </eyes>
+            <tail>
+                Тя е високо поставена и късо купирана като приблизително два опашни прешлена се оставят видими. 
+				В държавите, където купирането не е разрешено, опашката може да остане в естествен вид.
+            </tail>
+            <colors>
+                <primary_color>Черно с кафеви петна</primary_color>
+                <secondary_color>Кафяво с тъмно червени петна</secondary_color>
+                <prefered_color>Черно с кафеви петна</prefered_color>
+            </colors>
+            <fur> 
+			Козината е къса, твърда и гъста. Тя е прилепналаплътно, гладка е и е равномерно разпределена по цялата повърхност на тялото.
+			Подкосъм не се допуска.
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!302</image>
+            <size>
+                <males_size>60-67 см. в холката</males_size>
+                <females_size>55-65 см. в холката</females_size>
+            </size>
+            <weight>
+                <males_weight>35-43 кг.</males_weight>
+                <females_weight>30-35 кг.</females_weight>
+            </weight>
+        </dog_breed>
+        <dog_breed standart_number="SN86" group="GR3" section="S3.4">
+            <name>Йоркшир Териер</name>
+            <country country_code="GBR"  capital="London" official_language="British English" time_zone = "No UTC/GMT offset"  currency="Pound">
+		        <country_name>Великобритания</country_name>
+		        <country_continent>Европа</country_continent>
+		        <country_government_type>Монархия</country_government_type>
+		    </country>
+            <year_of_establishment>2003</year_of_establishment>
+            <head>
+               Череп:До известна степен малък и плосък, не много издаден или закръглен.
+            </head>
+            <teeth>
+                Перфектна, нормална и напълно затваряща се захапка, в смисъл горните зъби покриват долните. 
+				Добре разположени зъби с равни челюсти.
+            </teeth>
+            <ears>
+               Малки, във формата на буквата "V", изправени не много раздалечени едно от друго, 
+			   покрити с къса козина цвета е много дълбоко и богато жълтокафяв.
+            </ears>
+            <eyes>
+                Средни, тъмни, искрящи със остро интелигентно излъчване и разположени да гледат точно напред. 
+				Не са изпъкнали.Ръба на клепача е тъмен.
+            </eyes>
+            <tail>
+                Неподрязана, с много козина, по-тъмно синя от останалата част от тялото, особено на края на опашката. Трябва да се държи на височина малко по-висока от равнината на гърба, 
+				така че да придава вид на добре балансирана външност.
+            </tail>
+            <colors>
+                <primary_color>Тъмно стоманено синьо</primary_color>
+                <secondary_color>Няма разновидност</secondary_color>
+                <prefered_color>Тъмно стоманено синьо</prefered_color>
+            </colors>
+            <fur> 
+			 По тялото умерено дълга, перфектно права (в никакъв случай не на вълнички),лъскава, изглеждаща като финна коприна, не като вълна. 
+			 Спуска се по дължина на главата, с богат златен цвят, по-дълбок като цвят от страни на главата, корените не ушите и муцуната където трябва да е много дълга. 
+			 Цветът на главата не трябва да продължава по врата, нито тъмни или опушени косми да се смесват със златистия цвят.
+            </fur>
+            <image>https://skydrive.live.com/redir?resid=6F26B1E0D6CF648E!287</image>
+            <size>
+                <males_size>При тази порода само теглото има значение</males_size>
+                <females_size>При тази порода само теглото е от значение</females_size>
+            </size>
+            <weight>
+                <males_weight> Тегло до 3.1 кг (7 паунда).</males_weight>
+                <females_weight> Тегло до 3.1 кг (7 паунда).</females_weight>
+            </weight>
+        </dog_breed>
+		
+    </dog_breeds>
+    <sections>
+        <section section_id="S7.2">Британски и ирландски пойнтери и сетери</section>
+        <section section_id="S2.1"> Пинчери и шнауцери</section>
+        <section section_id="S3.4"> Тойтериери</section>
+	</sections>
+    <groups>
+        <group group_code="GR7"> ПТИЧАРИ</group>
+        <group group_code="GR2"> ПИНЧЕРИ И ШНАУЦЕРИ. ДОГООБРАЗНИ И ШВЕЙЦАРСКИ ПАСТИРСКИ КУЧЕТА</group>
+        <group group_code="GR3">ТЕРИЕРИ</group>
+	</groups>
+</fci>

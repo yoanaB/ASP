@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT fci ( dog_breeds, sections, groups ) >
+    <!ELEMENT dog_breeds (dog_breed+)>
+        <!ELEMENT dog_breed (name,country,year_of_establishment,head,teeth,ears,eyes,tail,colors,fur,image,size,weight)>
+             <!ATTLIST dog_breed standart_number ID #REQUIRED>
+             <!ATTLIST dog_breed group IDREFS #REQUIRED>
+             <!ATTLIST dog_breed section IDREFS #REQUIRED>
+         <!ELEMENT name (#PCDATA)>
+         <!ELEMENT country (country_name,country_continent,country_government_type)>
+         <!ATTLIST country capital  CDATA #REQUIRED>
+         <!ATTLIST country official_language CDATA #IMPLIED>
+         <!ATTLIST country  time_zone  CDATA  #IMPLIED>
+         <!ATTLIST country currency  CDATA #IMPLIED>
+         <!ATTLIST country country_code CDATA #IMPLIED>
+             <!ELEMENT country_name (#PCDATA)>
+             <!ELEMENT country_continent (#PCDATA)>
+             <!ELEMENT country_government_type (#PCDATA)>
+             
+         
+         <!ELEMENT year_of_establishment (#PCDATA)>
+         <!ELEMENT head (#PCDATA)>
+         <!ELEMENT teeth (#PCDATA)>
+         <!ELEMENT ears (#PCDATA)>
+         <!ELEMENT  eyes (#PCDATA)>
+         <!ELEMENT tail (#PCDATA)>
+         <!ELEMENT colors (primary_color,secondary_color,prefered_color)>
+            <!ELEMENT primary_color (#PCDATA)>
+            <!ELEMENT secondary_color (#PCDATA)>
+            <!ELEMENT prefered_color (#PCDATA)>
+         <!ELEMENT fur (#PCDATA)>
+         <!ELEMENT image (#PCDATA)>
+            <!ELEMENT size (males_size,females_size)>
+                <!ELEMENT males_size (#PCDATA)>
+                <!ELEMENT females_size (#PCDATA)>
+            <!ELEMENT weight (males_weight,females_weight)>
+                <!ELEMENT males_weight (#PCDATA)>
+                <!ELEMENT females_weight (#PCDATA)>
+          
+         <!ELEMENT sections (section+)>
+            <!ELEMENT section (#PCDATA)>
+                <!ATTLIST section section_id ID #REQUIRED>
+         <!ELEMENT groups (group+)>
+            <!ELEMENT group (#PCDATA)>
+                <!ATTLIST group group_code ID #REQUIRED >      
+            
+            
