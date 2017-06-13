@@ -32,6 +32,7 @@ namespace AspProjectApplication
                  if (RecordsCheckAndValidation.ValidationResult(_xmlContainer[k], errorsLog_TextBox))
                 {
                     var existsOrNotInDb = "Да";
+                    var exist = false;
 
                     //Crate XML document
                     var reader = new XmlDocument();
@@ -74,7 +75,7 @@ namespace AspProjectApplication
                                 {
                                     //richTextOutput_TextBox.Text += atr.Name + "::" + atr.InnerText + "\n";
 
-                                    if (atr.Name == "breed_number") { tmpCat.standart_number=atr.InnerText; }
+                                    if (atr.Name == "standart_number") { tmpCat.standart_number=atr.InnerText; }
                                     if (atr.Name == "group") { tmpCat.group = atr.InnerText; }
                                     if (atr.Name == "category") { tmpCat.section = atr.InnerText; }
 
@@ -186,14 +187,16 @@ namespace AspProjectApplication
                         //Или го няма в БД
                         if (RecordsCheckAndValidation.IsThereSuchAStandartNumber(tmpCat.standart_number))
                         {
+                            exist = true;
                             existsOrNotInDb = "Вече съществува такъв запис в базата данни";
+                            
                         }
                         
                         //Тук е мястото, на което след като вече имаме dogRecord попълнен го подаваме на функция
                         // insertAdogRecordIntoTheDataBase(dogRecord object) и тя вече преценява, какво да прави с него, тоест
                         //Дали е валиден за въвеждане.Ако - да го въвежда, ако- не, не го въвежда и преминаваме нататък
 
-                         InsertCatBreedRecord.InsertAdogRecordIntoTheDataBase(tmpCat, errorsLog_TextBox);
+                         InsertCatBreedRecord.InsertAdogRecordIntoTheDataBase(tmpCat, errorsLog_TextBox, exist);
 
                     }
                     submissionResult_TextBox.Text += "(" + k + ")";

@@ -9,10 +9,33 @@ namespace AspProjectApplication.Framework.IO
 {
     public static class InsertCatBreedRecord
     {
-        public static void InsertAdogRecordIntoTheDataBase  (   catRecord aCatRecord, TextBox errorsTextBox )
+        public static void InsertAdogRecordIntoTheDataBase(catRecord aCatRecord, TextBox errorsTextBox, bool exist )
         {
+           
+           /* try
+            {
+                var myConnection = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
+                var sqlIns = string.Format("INSERT ConnectingTable (categoty_number, breed_number, group_number) VALUES ('{0}','{1}','{2}')", aCatRecord.standart_number, aCatRecord.group, aCatRecord.section);
+                myConnection.Open();
+                var myCommand = new SqlCommand(sqlIns, myConnection);
+                myCommand.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                errorsTextBox.Text += "Получи се проблем при вмъкването на данни в ConnectingTable.Вероятна причина за това е вече наличен запис \n" + ex.Message + "\n\n\n\n\n";
+            }
+            catch (InvalidOperationException ex)
+            {
+                errorsTextBox.Text += "Получи се проблем при вмъкването на данни в ConnectingTable.Вероятна причина за това е вече наличен запис \n" + ex.Message + "\n\n\n\n\n";
+            } */
+
             //Проверяваме дали имаме запис в GroupInfo, който съдържа aCatBreed.group
-            if (!RecordsCheckAndValidation.IsThereSuchAGroupInTheDb(aCatRecord.group, errorsTextBox))
+            if(exist)
+            {
+                return;
+            }
+
+            else if (!RecordsCheckAndValidation.IsThereSuchAGroupInTheDb(aCatRecord.group, errorsTextBox))
             {
                 var myConnection                = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
                 var sqlIns                      = string.Format("INSERT GroupInfo (group_id,group_description) VALUES ('{0}','{1}')", aCatRecord.group, aCatRecord.group_description);
@@ -109,19 +132,19 @@ namespace AspProjectApplication.Framework.IO
             //Тук правим опит за вкарване на запис в ConnectingTable И евентуално прихващаме изключение ако вече съществува такъв запис
             try
             {
-                var myConnection                = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
-                var sqlIns                      = string.Format("INSERT ConnectingTable (categoty_number, breed_number, group_number) VALUES ('{0}','{1}','{2}')", aCatRecord.standart_number, aCatRecord.group, aCatRecord.section);
-                                                myConnection.Open();
-                var myCommand                   = new SqlCommand(sqlIns, myConnection);
-                                                myCommand.ExecuteNonQuery();
+                var myConnection = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
+                var sqlIns = string.Format("INSERT ConnectingTable (categoty_number, breed_number, group_number) VALUES ('{0}','{1}','{2}')", aCatRecord.section, aCatRecord.standart_number, aCatRecord.group);
+                myConnection.Open();
+                var myCommand = new SqlCommand(sqlIns, myConnection);
+                myCommand.ExecuteNonQuery();
             }
             catch (SqlException ex)
             {
-                errorsTextBox.Text              += "Получи се проблем при вмъкването на данни в ConnectingTable.Вероятна причина за това е вече наличен запис \n" + ex.Message + "\n\n\n\n\n";
+                errorsTextBox.Text += "Получи се проблем при вмъкването на данни в ConnectingTable.Вероятна причина за това е вече наличен запис \n" + ex.Message + "\n\n\n\n\n";
             }
             catch (InvalidOperationException ex)
             {
-                errorsTextBox.Text              += "Получи се проблем при вмъкването на данни в ConnectingTable.Вероятна причина за това е вече наличен запис \n" + ex.Message + "\n\n\n\n\n";
+                errorsTextBox.Text += "Получи се проблем при вмъкването на данни в ConnectingTable.Вероятна причина за това е вече наличен запис \n" + ex.Message + "\n\n\n\n\n";
             }
 
 

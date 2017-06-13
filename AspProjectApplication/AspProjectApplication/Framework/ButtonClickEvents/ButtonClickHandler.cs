@@ -48,7 +48,7 @@ namespace AspProjectApplication.Framework.ButtonClickEvents
                                              imgInput.Text, mSizeInput.Text,
                                              fSizeInput.Text, persInput.Text);
 
-                InsertCatBreedRecord.InsertAdogRecordIntoTheDataBase(myCatRec, errTextBox );
+                InsertCatBreedRecord.InsertAdogRecordIntoTheDataBase(myCatRec, errTextBox, false );
 
                 //След това създаваме XML документ, валиден за посоченото DTD и го попълваме с въведените данни
                 InsertCatBreedRecord.CreateValidXmlDocument(snInput,grInput,secInput,brNameInput,cntrCapInput,

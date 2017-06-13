@@ -2,9 +2,9 @@
 <!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_KristianAzmanov_71323_sourceCode/XML_Files/XML_Files/cat_breeds.dtd">
 <fif>
     <cat_breeds>
-        <cat_breed standart_number="SN90" group="GR2" category="SN9">
+        <cat_breed standart_number="SN90" group="GR2" category="SN0">
             <name>Девон рекс</name>
-            <country capital="Девоншир">
+            <country capital="Девоншир" country_code="GBR">
                 <country_name>Анлия</country_name>
                 <country_continent>Европа</country_continent>
                 <country_government_type>кралство</country_government_type>
@@ -37,9 +37,9 @@
         </cat_breed>
     </cat_breeds>
     <categories>
-        <category category_id="SN9">Напълно разпознати породи - категория 1</category>
+        <category category_id="SN0">Напълно разпознати породи - категория 1</category>
     </categories>
     <groups>
-        <group group_code="GR5"></group>
+        <group group_code="GR2"></group>
     </groups>
 </fif>
