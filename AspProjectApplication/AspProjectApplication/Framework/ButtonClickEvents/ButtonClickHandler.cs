@@ -33,7 +33,7 @@ namespace AspProjectApplication.Framework.ButtonClickEvents
             if (!RecordsCheckAndValidation.IsThereSuchAStandartNumber(snInput.Text))
             {
                 //Тук след като вече сме проверили,че ключовите полета са валидни   
-                //създаваме запис от тип dogRecord и го въвеждаме в базата данни
+                //създаваме запис от тип catRecord и го въвеждаме в базата данни
                 var myCatRec = new catRecord(snInput.Text, grInput.Text, secInput.Text,
                                              grDescrInput.Text, secInput.Text, brNameInput.Text,
                                              cntryCodeInput.Text, cntrCapInput.Text, offLangInput.Text,
@@ -48,7 +48,7 @@ namespace AspProjectApplication.Framework.ButtonClickEvents
                                              imgInput.Text, mSizeInput.Text,
                                              fSizeInput.Text, persInput.Text);
 
-                InsertCatBreedRecord.InsertAdogRecordIntoTheDataBase(myCatRec, errTextBox, false );
+                InsertCatBreedRecord.InsertAcatRecordIntoTheDataBase(myCatRec, errTextBox, false );
 
                 //След това създаваме XML документ, валиден за посоченото DTD и го попълваме с въведените данни
                 InsertCatBreedRecord.CreateValidXmlDocument(snInput,grInput,secInput,brNameInput,cntrCapInput,

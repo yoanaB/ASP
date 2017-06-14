@@ -9,7 +9,7 @@ namespace AspProjectApplication.Framework.IO
 {
     public static class InsertCatBreedRecord
     {
-        public static void InsertAdogRecordIntoTheDataBase(catRecord aCatRecord, TextBox errorsTextBox, bool exist )
+        public static void InsertAcatRecordIntoTheDataBase(catRecord aCatRecord, TextBox errorsTextBox, bool exist )
         {
            
            /* try
@@ -59,7 +59,7 @@ namespace AspProjectApplication.Framework.IO
                                                 myConnection.Close();
                 }
             }
-            //Проверяваме дали имаме запис в CatInfo, който да съдържа dogBreed.section
+            //Проверяваме дали имаме запис в CatInfo, който да съдържа catBreed.section
             if (!CheckForADublicate.IsThereSuchASectionInTheDb(aCatRecord.section))
             {
                 var myConnection                = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
@@ -84,7 +84,7 @@ namespace AspProjectApplication.Framework.IO
                                                 myConnection.Close();
                 }
             }
-            //Проверяваме дали имаме запис в CountryInfo, който да съдържа dogBreed.country_code
+            //Проверяваме дали имаме запис в CountryInfo, който да съдържа catBreed.country_code
             if (!CheckForADublicate.IsThereSuchACountryCodeInTheDb(aCatRecord.country_code))
             {
                 var myConnection                = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
@@ -110,7 +110,7 @@ namespace AspProjectApplication.Framework.IO
                 }
             }
 
-            //Тук правим опит за вмъкване на запис в DogCharacteristics И евентуално прихващаме изключение ако вече съществува такъв запис
+            //Тук правим опит за вмъкване на запис в CatCharacteristics И евентуално прихващаме изключение ако вече съществува такъв запис
             try
             {
                 var myConnection                = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
@@ -166,10 +166,10 @@ namespace AspProjectApplication.Framework.IO
             XmlNode rooNode                             = xmlDoc.CreateElement("fif");
                                                         xmlDoc.AppendChild                              (rooNode);
 
-            XmlNode dogBreeds                           = xmlDoc.CreateElement("cat_breeds");
-                                                        rooNode.AppendChild                             (dogBreeds);
+            XmlNode catBreeds                           = xmlDoc.CreateElement("cat_breeds");
+                                                        rooNode.AppendChild                             (catBreeds);
 
-            XmlNode dogBreed                            = xmlDoc.CreateElement("cat_breed");
+            XmlNode catBreed                            = xmlDoc.CreateElement("cat_breed");
             var standartNumber                          = xmlDoc.CreateAttribute("standart_number");
             standartNumber.Value                        = standartNumberInput.Text;
 
@@ -179,9 +179,9 @@ namespace AspProjectApplication.Framework.IO
             var category                                = xmlDoc.CreateAttribute("category");
             category.Value                              = sectionInput.Text;
 
-            dogBreed.Attributes.Append                   (standartNumber);
-            dogBreed.Attributes.Append                   (group);
-            dogBreed.Attributes.Append                   (category);
+            catBreed.Attributes.Append                   (standartNumber);
+            catBreed.Attributes.Append                   (group);
+            catBreed.Attributes.Append                   (category);
 
 
             XmlNode name                                = xmlDoc.CreateElement("name");
@@ -221,8 +221,9 @@ namespace AspProjectApplication.Framework.IO
                                                         country.AppendChild                         (countryContinent);
                                                         country.AppendChild                         (countryGovernmentType);
 
-                                                        dogBreed.AppendChild                        (country);
-                                                        dogBreed.AppendChild                        (name);
+                                                        catBreed.AppendChild                        (name);
+                                                        catBreed.AppendChild                        (country);
+                                                   
 
             XmlNode yearOfEstablishment                 = xmlDoc.CreateElement("year_of_establishment");
             yearOfEstablishment.InnerText               = yearEstablishedInput.Text;
@@ -273,19 +274,19 @@ namespace AspProjectApplication.Framework.IO
                                                         size.AppendChild                            (malesSize);
                                                         size.AppendChild                            (femalesSize);
 
-                                                        dogBreed.AppendChild                        (yearOfEstablishment);
-                                                        dogBreed.AppendChild                        (head);
-                                                        dogBreed.AppendChild                        (ears);
-                                                        dogBreed.AppendChild                        (eyes);
-                                                        dogBreed.AppendChild                        (tail);
-                                                        dogBreed.AppendChild                        (colors);
-                                                        dogBreed.AppendChild                        (fur);
-                                                        dogBreed.AppendChild                        (image);
-                                                        dogBreed.AppendChild                        (size);
-                                                        dogBreed.AppendChild                        (personality);
+                                                        catBreed.AppendChild                        (yearOfEstablishment);
+                                                        catBreed.AppendChild                        (head);
+                                                        catBreed.AppendChild                        (ears);
+                                                        catBreed.AppendChild                        (eyes);
+                                                        catBreed.AppendChild                        (tail);
+                                                        catBreed.AppendChild                        (colors);
+                                                        catBreed.AppendChild                        (fur);
+                                                        catBreed.AppendChild                        (image);
+                                                        catBreed.AppendChild                        (size);
+                                                        catBreed.AppendChild                        (personality);
 
-                                                        dogBreeds.AppendChild                       (dogBreed);
-                                                        rooNode.AppendChild                         (dogBreeds);
+                                                        catBreeds.AppendChild                       (catBreed);
+                                                        rooNode.AppendChild                         (catBreeds);
 
             XmlNode categories                          = xmlDoc.CreateElement("categories");
             XmlNode category1                           = xmlDoc.CreateElement("category");
@@ -314,7 +315,7 @@ namespace AspProjectApplication.Framework.IO
             //Това е стринг, който указва пътя, в който ще се записва XML документа.Използваме номера на въведеният стандарт 
             //с цел уникалност на името на файла (понеже и номера на стандарт е уникален)
             var nameXml                                 = string.Format(
-                "D:\\Documents\\ASP\\AspProject_KristianAzmanov_71323_sourceCode\\AspProjectApplication\\AspProjectApplication\\App_Data\\xmlDocument_{0}.xml", standartNumberInput.Text);
+                "D:\\Documents\\ASP\\AspProject_YoanaBoyanova_71323_sourceCode\\AspProjectApplication\\AspProjectApplication\\App_Data\\xmlDocument_{0}.xml", standartNumberInput.Text);
 
 
                                                         xmlDoc.Save                                 (nameXml);

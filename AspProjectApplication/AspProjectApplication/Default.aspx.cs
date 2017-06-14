@@ -14,7 +14,7 @@ namespace AspProjectApplication
         /// Тук декларираме контейнер, който ще използваме когато зареждаме файловете в БД
         /// Правим го така за да можем да имаме индексиран достъп до елементите
         /// </summary>
-        readonly string[] _xmlContainer = Directory.GetFiles(@"D:\Documents\ASP\AspProject_KristianAzmanov_71323_sourceCode\XML_Files\XML_Cat", "*.xml");
+        readonly string[] _xmlContainer = Directory.GetFiles(@"D:\Documents\ASP\AspProject_YoanaBoyanova_71323_sourceCode\XML_Files\XML_Cat", "*.xml");
    
         
         protected void Page_Load(object sender, EventArgs e)
@@ -80,7 +80,7 @@ namespace AspProjectApplication
                                     if (atr.Name == "category") { tmpCat.section = atr.InnerText; }
 
                                     //На този ред започва сравненеито между лемемнтите в <groups> и текущата group за да можем да 
-                                    //вземем описанието на групата, в която попада породата куче
+                                    //вземем описанието на групата, в която попада породата котка
                                     for (int j = 0; j < seperateGroupsList.Count; j++)
                                     {
                                         foreach (XmlElement groupElement in seperateGroupsList[j].ChildNodes)
@@ -97,7 +97,7 @@ namespace AspProjectApplication
                                     }
 
                                     //На този ред започва сравненеито между лемемнтите в <sections> и текущата section за да можем да 
-                                    //вземем описанието на секцията, в която попада породата куче
+                                    //вземем описанието на секцията, в която попада породата котка
                                     for (int j = 0; j < seperateSectionList.Count; j++)
                                     {
                                         foreach (XmlElement sectionElement in seperateSectionList[j].ChildNodes)
@@ -192,11 +192,11 @@ namespace AspProjectApplication
                             
                         }
                         
-                        //Тук е мястото, на което след като вече имаме dogRecord попълнен го подаваме на функция
-                        // insertAdogRecordIntoTheDataBase(dogRecord object) и тя вече преценява, какво да прави с него, тоест
+                        //Тук е мястото, на което след като вече имаме catRecord попълнен го подаваме на функция
+                        // insertAcatRecordIntoTheDataBase(catRecord object) и тя вече преценява, какво да прави с него, тоест
                         //Дали е валиден за въвеждане.Ако - да го въвежда, ако- не, не го въвежда и преминаваме нататък
 
-                         InsertCatBreedRecord.InsertAdogRecordIntoTheDataBase(tmpCat, errorsLog_TextBox, exist);
+                         InsertCatBreedRecord.InsertAcatRecordIntoTheDataBase(tmpCat, errorsLog_TextBox, exist);
 
                     }
                     submissionResult_TextBox.Text += "(" + k + ")";

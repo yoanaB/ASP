@@ -1,0 +1,52 @@
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="ADR" group="B" category="3">
+      <name>
+      </name>
+      <country capital="" official_language="" time_zone="UTC/GMT  +1 hours" currency="" country_code="GBR">
+        <country_name>
+        </country_name>
+        <country_continent>Северна Америка</country_continent>
+        <country_government_type>
+        </country_government_type>
+      </country>
+      <year_of_establishment>1985</year_of_establishment>
+      <head>
+      </head>
+      <ears>
+      </ears>
+      <eyes>
+      </eyes>
+      <tail>
+      </tail>
+      <colors>
+        <primary_color>
+        </primary_color>
+        <secondary_color>
+        </secondary_color>
+        <prefered_color>
+        </prefered_color>
+      </colors>
+      <fur>
+      </fur>
+      <image>
+      </image>
+      <size>
+        <males_size>
+        </males_size>
+        <females_size>
+        </females_size>
+      </size>
+      <personality>
+      </personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="3">
+    </category>
+  </categories>
+  <groups>
+    <group group_code="B">
+    </group>
+  </groups>
+</fif>

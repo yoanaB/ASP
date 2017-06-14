@@ -20,7 +20,7 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
         /// <returns></returns>
         public static bool          IsStandartNumberValid                   (TextBox  snTextBox)
         {
-            const string pattern            = @"^SN([1-9]\d?\d?|[1-9]\d|[1-9]\d\d)$";
+            const string pattern            = @"^[A-Z]{3}$";
             var myRegex                     = new Regex(pattern);
 
             var test                        = snTextBox.Text;
@@ -35,7 +35,7 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
         /// <returns></returns>
         public static bool          IsGroupNumberValid                      (ITextControl gnTextBox )
         {
-            const string pattern            = @"^GR([1][0]|[1,2,3,4,5,6,7,8,9])$";
+            const string pattern            = @"^[A-D]{1}$";
 
             var myRegex                     = new Regex(pattern, 0);
 
@@ -49,7 +49,7 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
         /// <returns></returns>
         public static bool          IsSectionNumberValid                    (ITextControl snTextBox,ITextControl grTextBox)
         {
-            var groupNumber                 = "";
+            /* var groupNumber                 = "";
 
             //Този ред ни помага да съвпаднем секцията към въведената група.Тоест, ако въведената ни група е GR9, то
             //секцията задължително започва с "S9.***", което в известен смисъл обозначавам принадлежност към група
@@ -65,9 +65,9 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
                 case "GR8": groupNumber = "8"; break;
                 case "GR9": groupNumber = "9"; break;
                 default: groupNumber = "10"; break;
-            }
+            } */
 
-            var pattern                     = string.Format(@"^S{0}\.([1,2,3,4,5,6,7,8,9](\.[1,2,3,4,5,6,7,8,9])?)$", groupNumber);
+            const string pattern                     = @"^[1-4]{1}$";
 
             var myRegex                     = new Regex(pattern, 0);
 
