@@ -14,7 +14,7 @@ namespace AspProjectApplication
         /// Тук декларираме контейнер, който ще използваме когато зареждаме файловете в БД
         /// Правим го така за да можем да имаме индексиран достъп до елементите
         /// </summary>
-        readonly string[] _xmlContainer = Directory.GetFiles(@"D:\Documents\ASP\AspProject_YoanaBoyanova_71323_sourceCode\XML_Files\XML_Cat", "*.xml");
+        readonly string[] _xmlContainer = Directory.GetFiles(@"D:\Documents\ASP\AspProject_YoanaBoyanova_71540_sourceCode\XML_Files\XML_Cat", "*.xml");
    
         
         protected void Page_Load(object sender, EventArgs e)

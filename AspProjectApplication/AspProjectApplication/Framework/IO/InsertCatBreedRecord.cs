@@ -315,10 +315,10 @@ namespace AspProjectApplication.Framework.IO
             //Това е стринг, който указва пътя, в който ще се записва XML документа.Използваме номера на въведеният стандарт 
             //с цел уникалност на името на файла (понеже и номера на стандарт е уникален)
             var nameXml                                 = string.Format(
-                "D:\\Documents\\ASP\\AspProject_YoanaBoyanova_71323_sourceCode\\AspProjectApplication\\AspProjectApplication\\App_Data\\xmlDocument_{0}.xml", standartNumberInput.Text);
+                "D:\\Documents\\ASP\\AspProject_YoanaBoyanova_71540_sourceCode\\AspProjectApplication\\AspProjectApplication\\App_Data\\xmlDocument_{0}.xml", standartNumberInput.Text);
 
 
-                                                        xmlDoc.Save                                 (nameXml);
+                                                       xmlDoc.Save                                 (nameXml);
         }
     }
 }

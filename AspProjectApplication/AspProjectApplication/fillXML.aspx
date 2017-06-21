@@ -38,8 +38,12 @@
                ID="groupDescrInput" runat="server" TextMode="MultiLine" 
                        autocomplete="off"></asp:TextBox></td>
                </tr>
+
+             
                 
                 <tr>
+
+
                 <td><asp:Label ID="Label5" runat="server" >*Категория, в която попада породата:</asp:Label></td>
                   <td>  <asp:TextBox
                ID="sectionInput" runat="server" autocomplete="off"></asp:TextBox><asp:Label ID="Label6" runat="server" Text="Label" Font-Size="XX-Small">Пример:"1" *  </asp:Label>

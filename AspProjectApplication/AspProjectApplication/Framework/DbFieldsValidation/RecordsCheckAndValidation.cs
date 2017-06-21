@@ -35,7 +35,7 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
         /// <returns></returns>
         public static bool          IsGroupNumberValid                      (ITextControl gnTextBox )
         {
-            const string pattern            = @"^[A-D]{1}$";
+            const string pattern            = @"^group[A-D]{1}$";
 
             var myRegex                     = new Regex(pattern, 0);
 
@@ -67,7 +67,7 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
                 default: groupNumber = "10"; break;
             } */
 
-            const string pattern                     = @"^[1-4]{1}$";
+            const string pattern                     = @"^cat[1-4]{1}$";
 
             var myRegex                     = new Regex(pattern, 0);
 

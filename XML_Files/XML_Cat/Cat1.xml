@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_KristianAzmanov_71323_sourceCode/XML_Files/XML_Files/cat_breeds.dtd">
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/XML_Files/cat_breeds.dtd">
 <fif>
     <cat_breeds>
-        <cat_breed standart_number="SN97" group="GR5" category="SN9">
+        <cat_breed standart_number="EXO" group="groupA" category="cat1">
             <name>Екзотична котка</name>
             <country capital="Вашингтон" country_code="USA">
                 <country_name>САЩ</country_name>
@@ -37,9 +37,9 @@
         </cat_breed>
     </cat_breeds>
     <categories>
-        <category category_id="SN9">Напълно разпознати породи - категория 1</category>
+        <category category_id="cat1">Напълно разпознати породи - категория 1</category>
     </categories>
     <groups>
-        <group group_code="GR5"></group>
+        <group group_code="groupA">EXO, PER</group>
     </groups>
 </fif>

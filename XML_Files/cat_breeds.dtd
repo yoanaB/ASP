@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT fif ( cat_breeds, categories, groups ) >
     <!ELEMENT cat_breeds (cat_breed+)>
-        <!ELEMENT cat_breed (name,country,head,ears,eyes,tail, year_of_establishment, colors,fur,image,size,personality)>
+        <!ELEMENT cat_breed (name,country, year_of_establishment, head,ears,eyes,tail, colors,fur,image,size,personality)>
              <!ATTLIST cat_breed standart_number ID #REQUIRED>
              <!ATTLIST cat_breed group IDREFS #REQUIRED>
+             <!ATTLIST cat_breed category IDREFS #REQUIRED>
          <!ELEMENT name (#PCDATA)>
          <!ELEMENT country (country_name,country_continent,country_government_type)>
          <!ATTLIST country capital  CDATA #REQUIRED>
@@ -14,12 +15,12 @@
              <!ELEMENT country_name (#PCDATA)>
              <!ELEMENT country_continent (#PCDATA)>
              <!ELEMENT country_government_type (#PCDATA)>
-         
+         <!ELEMENT year_of_establishment (#PCDATA)>
          <!ELEMENT head (#PCDATA)>
          <!ELEMENT ears (#PCDATA)>
          <!ELEMENT eyes (#PCDATA)>
          <!ELEMENT tail (#PCDATA)>
-         <!ELEMENT year_of_establishment (#PCDATA)>
+         
         
          <!ELEMENT colors (primary_color,secondary_color,prefered_color)>
             <!ELEMENT primary_color (#PCDATA)>

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_KristianAzmanov_71323_sourceCode/XML_Files/XML_Files/cat_breeds.dtd">
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
 <fif>
     <cat_breeds>
-        <cat_breed standart_number="SN90" group="GR2" category="SN1">
+        <cat_breed standart_number="JBT" group="groupA" category="cat3">
             <name>Японски бобтейл</name>
             <country capital="Токио" country_code="JAP">
                 <country_name>Япония</country_name>
                 <country_continent>Азия</country_continent>
                 <country_government_type>република</country_government_type>
             </country>
+            <year_of_establishment>1960</year_of_establishment>
             <head>
                 Главата с с почти правилна триъгълна форма. Има високо разположени скули, а бузите са развити и закръглени. Носът е сравнително дълъг, със сплеснат край. 
             </head>
@@ -18,7 +19,7 @@
                 Очите са големи, с овална форма, косо поставени. Техният цвят трябва да хармонира на окраската на козината.             </eyes>
             <tail>
                 Опашката е необичайно къса и е типичен признак на породата. В спокойно състояние бобтейлът държи опашката високо повдигната, при което нейната дължина е от 6 до 9 см (при измерване в изтегнато положение нейната максимална дължина може да достигне 10-12 см).             </tail>
-            <year_of_establishment>1960</year_of_establishment>
+            
             <colors>
                 <primary_color>черен</primary_color>
                 <secondary_color>червен</secondary_color>
@@ -36,9 +37,9 @@
         </cat_breed>
     </cat_breeds>
     <categories>
-        <category category_id="SN1">Напълно разпознати породи - категория 2</category>
+        <category category_id="cat3">Напълно разпознати породи - категория 2</category>
     </categories>
     <groups>
-        <group group_code="GR2"></group>
+        <group group_code="groupA">EXO, PER, JBT</group>
     </groups>
 </fif>
