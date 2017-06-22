@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="SPH" group="groupC" category="cat4">
+      <name>Сфинкс</name>
+      <country capital="Кайро" official_language="арабски" time_zone="UTC/GMT  +2 hours" currency="египетска лира" country_code="EGP">
+        <country_name>Египет</country_name>
+        <country_continent>Африка</country_continent>
+        <country_government_type>република</country_government_type>
+      </country>
+      <year_of_establishment>2002</year_of_establishment>
+      <head></head>
+      <ears>Характерни са големите уши</ears>
+      <eyes> Очите са искрящо сини на цвят.</eyes>
+      <tail></tail>
+      <colors>
+        <primary_color></primary_color>
+        <secondary_color></secondary_color>
+        <prefered_color></prefered_color>
+      </colors>
+      <fur>голо тяло</fur>
+      <image>http://e4p-bg.com/wp-content/uploads/2014/09/Sphynx_1.jpg</image>
+      <size>
+        <males_size>5</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality>Ако сте решили да си вземете такава котка, не забравяйте – тя не счита себе си за котка! </personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat4">напълно разпознати котки 4</category>
+  </categories>
+  <groups>
+    <group group_code="groupC">късокосмести котки</group>
+  </groups>
+</fif>

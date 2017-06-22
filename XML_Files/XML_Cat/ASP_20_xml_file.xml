@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="TUA" group="groupB" category="cat2">
+      <name>Турска ангора</name>
+      <country capital="Анкара" official_language="турски" time_zone="UTC/GMT  +3 hours" currency="лира" country_code="TUR">
+        <country_name>Турция</country_name>
+        <country_continent>Азия</country_continent>
+        <country_government_type>република</country_government_type>
+      </country>
+      <year_of_establishment>1988</year_of_establishment>
+      <head>Главата има триъгълна форма.</head>
+      <ears> Ушите са широки в основата си, заострени в крайщата и гъсто окосмени. </ears>
+      <eyes>Очите са с бадемовидна форма, като могат да бъдат сини, оранжеви, зелени или разноцветни. Представителите със сини очи често са глухи, а тези, които имат едно синьо око са глухи от неговата страна.</eyes>
+      <tail>Опашката е плътна, с дълги косми.</tail>
+      <colors>
+        <primary_color>ангорка бяла със сини очи</primary_color>
+        <secondary_color>ангорка бяла с различен цвят очи</secondary_color>
+        <prefered_color>ангорска червена ивичеста таби с оранжеви очи</prefered_color>
+      </colors>
+      <fur>Коприненият тоалет на ангорската котка е много впечатляващ. По тялото козината се състои от твърде фини и доста по-дълги от останалите косми - те започват от нивата на якичката към бутовете, до под корема.</fur>
+      <image>http://www.kotkite.com/img/articles/thumbs/3107070713_6_.jpg</image>
+      <size>
+        <males_size>6</males_size>
+        <females_size>5</females_size>
+      </size>
+      <personality>Опашката е плътна, с дълги косми.</personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat2">напълно разпознати котки - 2</category>
+  </categories>
+  <groups>
+    <group group_code="groupB">екзотични котки</group>
+  </groups>
+</fif>

@@ -14,7 +14,7 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
     public static class RecordsCheckAndValidation
     {
         /// <summary>
-        /// //Това е функция, която проверява дали въведеният номер на стандарт е валиден : "SN***"
+        /// //Това е функция, която проверява дали въведеният номер на порода е валиден 
         /// </summary>
         /// <param name="snTextBox"></param>
         /// <returns></returns>
@@ -29,7 +29,7 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
         }
 
         /// <summary>
-        /// Това е функция, която проверява дали номерът  на групата е в правилният формат:"GR**"
+        /// Това е функция, която проверява дали номерът  на групата е в правилният формат:"group*"
         /// </summary>
         /// <param name="gnTextBox"></param>
         /// <returns></returns>
@@ -43,29 +43,12 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
         }
 
         /// <summary>
-        /// Това е функция, която проверява дали номерът на секцията е в павилният формат:"S***"
+        /// Това е функция, която проверява дали номерът на категорията е в павилният формат:"cat*"
         /// </summary>
         /// <param name="snTextBox"></param>
         /// <returns></returns>
         public static bool          IsSectionNumberValid                    (ITextControl snTextBox,ITextControl grTextBox)
         {
-            /* var groupNumber                 = "";
-
-            //Този ред ни помага да съвпаднем секцията към въведената група.Тоест, ако въведената ни група е GR9, то
-            //секцията задължително започва с "S9.***", което в известен смисъл обозначавам принадлежност към група
-            switch (grTextBox.Text)
-            {
-                case "GR1": groupNumber = "1"; break;
-                case "GR2": groupNumber = "2"; break;
-                case "GR3": groupNumber = "3"; break;
-                case "GR4": groupNumber = "4"; break;
-                case "GR5": groupNumber = "5"; break;
-                case "GR6": groupNumber = "6"; break;
-                case "GR7": groupNumber = "7"; break;
-                case "GR8": groupNumber = "8"; break;
-                case "GR9": groupNumber = "9"; break;
-                default: groupNumber = "10"; break;
-            } */
 
             const string pattern                     = @"^cat[1-4]{1}$";
 
@@ -111,12 +94,12 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
         /// <returns></returns>
         public static bool          IsThereSuchAStandartNumber              (string aStandartNumber)
         {
-
+            var myConnection = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
             var table                       = new DataTable();
 
             try
             {
-                var myConnection            = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
+                // var myConnection            = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
                 var sqlSelect               = string.Format("SELECT * FROM ConnectingTable WHERE breed_number  = '{0}'", aStandartNumber);
 
                                             myConnection.Open();
@@ -127,6 +110,10 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
             catch (SqlException)
             {
 
+            }
+            finally
+            {
+                myConnection.Close();
             }
             return table.Rows.Count != 0;
 
@@ -161,7 +148,7 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
                     while (reader1.Read())
                     {
 
-                        //В тази част reader1 чете ред-по-ред и същевременно съпоставя с ASP_DTD.dtd
+                        //В тази част reader1 чете ред-по-ред и същевременно съпоставя с cat_breed.dtd
                         //Там където намери несъответствие между елементът, който чете в момента
                         //и елементът, който е се е очаквало да прочете връща изключение, което се прихваща в по-долния ред
 
@@ -183,6 +170,10 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
                 errorTextBox.Text += "There was a problem with the opening of the file \n" + ex.Message + "\n";
                 return validationCheckResult;
             }
+            /* finally
+            {
+                myConnection.Close();
+            } */
 
         }
 
@@ -194,11 +185,12 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
         /// <returns></returns>
         public static bool          IsThereSuchAGroupInTheDb                (string aGroup, TextBox errorTextBox)
         {
+            var myConnection = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
             var table                       = new DataTable();
 
             try
             {
-                var myConnection            = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
+                
                 var sqlSelect               = string.Format("SELECT * FROM GroupInfo WHERE group_id = '{0}'", aGroup);
 
                                             myConnection.Open();
@@ -213,6 +205,10 @@ namespace AspProjectApplication.Framework.DbFieldsValidation
             catch (InvalidOperationException ex)
             {
                 errorTextBox.Text           += "Получи се проблем от страна на SQL Сървъра \n" + ex.Message;
+            }
+            finally
+            {
+                myConnection.Close();
             }
             return table.Rows.Count != 0;
 

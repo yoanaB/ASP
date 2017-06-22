@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+    <cat_breeds>
+        <cat_breed standart_number="DRX" group="groupC" category="cat4">
+            <name>Девон рекс</name>
+            <country capital="Лондон" official_language="английски" time_zone="UTC/GMT  -2 hours" currency="паунд" country_code="GBR">
+                <country_name>Великобритания</country_name>
+                <country_continent>Европа</country_continent>
+                <country_government_type>кралство</country_government_type>
+            </country>
+            <year_of_establishment>1960</year_of_establishment>
+            <head>
+                 Главата е с триъгълна форма, изразени скули и масивно подбрадие. Носът е къс и има ясно изразен стоп, а челото е скосено.
+            </head>
+            <ears>
+                Ушите са големи, широки в основата и със закръглени краища, изцяло покрити с гъсти коприненоподобни косми с окосмени или без космено покритие кожни гънки в задната част на ушната раковина (т. нар. "шалче в ухото"
+            </ears>
+            <eyes>
+                 Очите са широко поставени, големи, с бадемовидна форма, леко удължени в посока към ушите. Цветът им трябва да хармонира с обагрянето на козината - жълт или зелен. 
+            </eyes>
+            <tail>Опашката е тънка, дълга, заострена накрая, покрита с гъсти, къси косми.</tail>
+            
+            <colors>
+                <primary_color>кафяв</primary_color>
+                <secondary_color>черен</secondary_color>
+                <prefered_color>бял</prefered_color>
+            </colors>
+            <fur>Козината се състои от къси, нежни, меки и къдрави косми, с подкосмие. Вибрисите са силно развити, средно дълги и вълнисти. Окраската може да бъде разнообразна.</fur>
+            <image></image>
+            <size>
+                <males_size>5</males_size>
+                <females_size>4</females_size>
+            </size>
+            <personality>
+                Котките от породата девон рекс са енергични и игриви. Обичат ласките и лесно се привързват към членовете на семейството.
+            </personality>
+        </cat_breed>
+    </cat_breeds>
+    <categories>
+        <category category_id="cat4">Напълно разпознати породи - категория 4</category>
+    </categories>
+    <groups>
+        <group group_code="groupC">късокосмести</group>
+    </groups>
+</fif>

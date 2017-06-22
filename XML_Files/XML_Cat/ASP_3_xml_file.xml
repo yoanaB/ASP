@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="EUR" group="groupC" category="cat4">
+      <name>Европейска котка</name>
+      <country capital="Лондон" official_language="английски" time_zone="UTC/GMT  -2 hours" currency="паунд" country_code="GBR">
+        <country_name>Великобритания</country_name>
+        <country_continent>Европа</country_continent>
+        <country_government_type>кралство</country_government_type>
+      </country>
+      <year_of_establishment>1981</year_of_establishment>
+      <head>кръгла глава </head>
+      <ears>еголеми уши, много гъст подкосъм</ears>
+      <eyes> Очите на европейската късокосместа са чисти, прозрачни. Цветът им може да бъде зелен, жълт, оранжев или син в зависимост от окраската на козината.</eyes>
+      <tail>Опашката й е със средна дължина, желателно е да е широка в основата, постепенно изтъняваща и със завито връхче. </tail>
+      <colors>
+        <primary_color>златист</primary_color>
+        <secondary_color>сребрист</secondary_color>
+        <prefered_color>бял</prefered_color>
+      </colors>
+      <fur>къса</fur>
+      <image>http://www.catbg.net/domashni/pictures/Porodi/eur/eur2.jpg</image>
+      <size>
+        <males_size>5</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality>Това, което ще забележите от пръв поглед, е че европейските късокосмести котки винаги са активни и жизнерадостни.</personality>
+    </cat_breed>
+	
+	<cat_breed standart_number="BML" group="groupC" category="cat3">
+      <name>Бурмила</name>
+      <country capital="" official_language="" time_zone="UTC/GMT  +2 hours" currency="" country_code="JAP">
+        <country_name></country_name>
+        <country_continent></country_continent>
+        <country_government_type></country_government_type>
+      </country>
+      <year_of_establishment>1949</year_of_establishment>
+      <head>кръгла, но е по-дълга, отколкото широка.</head>
+      <ears>Широко поставените уши са със среден размер, широки в основата и постепенно изтъняващи и закръглени накрая.</ears>
+      <eyes>много кръгли и широко поставени, под лек наклон към носа.</eyes>
+      <tail>1.Тип rumру (код 51) - няма опашни прешлени и е налице пълна липса на опашка, като има вдлъбнатина на мястото на липсващата опашка, която се констатира с поставяне на палеца;
+			2.Тип rumpy-riser (код 52) - с малко опашни прешлени, които обикновено са свързани неподвижно - представлява къс изправен израстък;
+			3.Тип stumpy (код 53) - остатъчна къса опашка с деформации (удебеления);
+			4.Тип longy (код 54) - опашката се доближава до нормалната дължина, но е видимо по-къса.</tail>
+      <colors>
+        <primary_color>сребриск</primary_color>
+        <secondary_color>златист</secondary_color>
+        <prefered_color>бял</prefered_color>
+      </colors>
+      <fur>къса</fur>
+      <image>http://www.kotkite.com/img/articles/thumbs/0208070837_6_.jpg</image>
+      <size>
+        <males_size>5</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality></personality>
+    </cat_breed>
+	
+	<cat_breed standart_number="KOR" group="groupC" category="cat4">
+      <name>Корат</name>
+	  <country capital="Кайро" official_language="арабски" time_zone="UTC/GMT  +2 hours" currency="египетска лира" country_code="EGP">
+	    <country_name>Египет</country_name>
+	    <country_continent>Африка</country_continent>
+	    <country_government_type>република</country_government_type>
+	  </country>
+      <year_of_establishment>2002</year_of_establishment>
+      <head></head>
+      <ears>Характерни са големите уши</ears>
+      <eyes> Очите са искрящо сини на цвят.</eyes>
+      <tail></tail>
+      <colors>
+        <primary_color></primary_color>
+        <secondary_color></secondary_color>
+        <prefered_color></prefered_color>
+      </colors>
+      <fur>голо тяло</fur>
+      <image>http://e4p-bg.com/wp-content/uploads/2014/09/Sphynx_1.jpg</image>
+      <size>
+        <males_size>5</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality>Ако сте решили да си вземете такава котка, не забравяйте – тя не счита себе си за котка! </personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat4">напълно разпознати котки 4</category>
+    <category category_id="cat3">напълно разпознати котки 3</category>
+  </categories>
+  <groups>
+    <group group_code="groupC">късокосмести котки</group>
+  </groups>
+</fif>

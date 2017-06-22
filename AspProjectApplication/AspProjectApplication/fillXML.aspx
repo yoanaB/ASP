@@ -28,7 +28,7 @@
                    
                 <tr><td>  
                <asp:Label ID="Label2" runat="server" >*Група в която попада породата:</asp:Label></td><td>
-                   <asp:TextBox ID="groupInput" runat="server" autocomplete="off" ></asp:TextBox><asp:Label ID="Label3" runat="server" Text="Label" Font-Size="XX-Small">Пример:"A" , Валидни групи:A-D  </asp:Label>
+                   <asp:TextBox ID="groupInput" runat="server" autocomplete="off" ></asp:TextBox><asp:Label ID="Label3" runat="server" Text="Label" Font-Size="XX-Small">Пример:"groupA" , Валидни групи:A-D  </asp:Label>
                    <asp:Label ID="groupStatus_Label" runat="server"></asp:Label></td>
                    </tr>
             
@@ -46,7 +46,7 @@
 
                 <td><asp:Label ID="Label5" runat="server" >*Категория, в която попада породата:</asp:Label></td>
                   <td>  <asp:TextBox
-               ID="sectionInput" runat="server" autocomplete="off"></asp:TextBox><asp:Label ID="Label6" runat="server" Text="Label" Font-Size="XX-Small">Пример:"1" *  </asp:Label>
+               ID="sectionInput" runat="server" autocomplete="off"></asp:TextBox><asp:Label ID="Label6" runat="server" Text="Label" Font-Size="XX-Small">Пример:"cat1" *  </asp:Label>
                     <asp:Label ID="sectionStatus_Label" runat="server"></asp:Label></td>
             </tr>
             

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="PEB" group="groupD" category="cat4">
+      <name>Петерболд</name>
+      <country capital="Москва" official_language="руски" time_zone="UTC/GMT  -2 hours" currency="рубла" country_code="RUS">
+        <country_name>Русия</country_name>
+        <country_continent>Европа</country_continent>
+        <country_government_type></country_government_type>
+      </country>
+      <year_of_establishment>2012</year_of_establishment>
+      <head>Главата има клиновидна форма. </head>
+      <ears>Ушите са големи, широки в основата си и леко заострени в края си.</ears>
+      <eyes> Очите са големи, с бадемовидна форма. </eyes>
+      <tail></tail>
+      <colors>
+        <primary_color>в един тон</primary_color>
+        <secondary_color></secondary_color>
+        <prefered_color></prefered_color>
+      </colors>
+      <fur>няма козина </fur>
+      <image>http://gradcontent.com/lib/600x350/german-rex.jpg</image>
+      <size>
+        <males_size>6</males_size>
+        <females_size>5</females_size>
+      </size>
+      <personality>Петерболдът е подходяща порода за семейства с по-големи деца, за сами живеещи хора с 
+	  други домашни любимци, но преди всичко неговите собственици трябва да имат опит в отглеждането на котки. 
+	  Той е интелигентна, приятелски настроена котка, която не таи злоба.</personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat4">напълно разпознати котки - 4</category>
+  </categories>
+  <groups>
+    <group group_code="groupD">редки котки</group>
+  </groups>
+</fif>

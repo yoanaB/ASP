@@ -71,7 +71,7 @@ namespace AspProjectApplication
 
                 if (!RecordsCheckAndValidation.IsSectionNumberValid(sectionInput,groupInput))
                 {
-                    sectionStatus_Label.Text                = "Въведеният номер на секция е невалиден!";
+                    sectionStatus_Label.Text                = "Въведеният номер на категория е невалиден!";
                     sectionStatus_Label.Visible             = true;
                     sectionStatus_Label.ForeColor           = System.Drawing.Color.IndianRed;
 

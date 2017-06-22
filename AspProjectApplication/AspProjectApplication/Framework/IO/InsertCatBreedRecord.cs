@@ -11,33 +11,17 @@ namespace AspProjectApplication.Framework.IO
     {
         public static void InsertAcatRecordIntoTheDataBase(catRecord aCatRecord, TextBox errorsTextBox, bool exist )
         {
-           
-           /* try
-            {
-                var myConnection = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
-                var sqlIns = string.Format("INSERT ConnectingTable (categoty_number, breed_number, group_number) VALUES ('{0}','{1}','{2}')", aCatRecord.standart_number, aCatRecord.group, aCatRecord.section);
-                myConnection.Open();
-                var myCommand = new SqlCommand(sqlIns, myConnection);
-                myCommand.ExecuteNonQuery();
-            }
-            catch (SqlException ex)
-            {
-                errorsTextBox.Text += "Получи се проблем при вмъкването на данни в ConnectingTable.Вероятна причина за това е вече наличен запис \n" + ex.Message + "\n\n\n\n\n";
-            }
-            catch (InvalidOperationException ex)
-            {
-                errorsTextBox.Text += "Получи се проблем при вмъкването на данни в ConnectingTable.Вероятна причина за това е вече наличен запис \n" + ex.Message + "\n\n\n\n\n";
-            } */
+            var myConnection = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
 
             //Проверяваме дали имаме запис в GroupInfo, който съдържа aCatBreed.group
-            if(exist)
+            if (exist)
             {
                 return;
             }
 
             else if (!RecordsCheckAndValidation.IsThereSuchAGroupInTheDb(aCatRecord.group, errorsTextBox))
             {
-                var myConnection                = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
+              
                 var sqlIns                      = string.Format("INSERT GroupInfo (group_id,group_description) VALUES ('{0}','{1}')", aCatRecord.group, aCatRecord.group_description);
 
                 try
@@ -62,7 +46,7 @@ namespace AspProjectApplication.Framework.IO
             //Проверяваме дали имаме запис в CatInfo, който да съдържа catBreed.section
             if (!CheckForADublicate.IsThereSuchASectionInTheDb(aCatRecord.section))
             {
-                var myConnection                = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
+                
                 var sqlIns                      = string.Format("INSERT CategoryInfo (category_id,category_descriptio) VALUES ('{0}','{1}')", aCatRecord.section, aCatRecord.section_description);
 
                 try
@@ -87,7 +71,7 @@ namespace AspProjectApplication.Framework.IO
             //Проверяваме дали имаме запис в CountryInfo, който да съдържа catBreed.country_code
             if (!CheckForADublicate.IsThereSuchACountryCodeInTheDb(aCatRecord.country_code))
             {
-                var myConnection                = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
+                
                 var sqlIns                      = string.Format("INSERT Country (country_code,capital,official_language,time_zone,currency,country_name,country_continent,country_government_type) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", aCatRecord.country_code, aCatRecord.capital, aCatRecord.official_language, aCatRecord.time_zone, aCatRecord.currency, aCatRecord.country_name, aCatRecord.country_continent, aCatRecord.country_government_type);
 
                 try
@@ -111,9 +95,10 @@ namespace AspProjectApplication.Framework.IO
             }
 
             //Тук правим опит за вмъкване на запис в CatCharacteristics И евентуално прихващаме изключение ако вече съществува такъв запис
+            
             try
             {
-                var myConnection                = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
+                
                 var sqlIns                      = string.Format("INSERT CatBreedInfo (breed_number, breed_name,country_code,year_established,head,ears,eyes,tail,primary_color,secondary_color,prefered_color,fur,image,males_size,females_size,personality) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}')", aCatRecord.standart_number, aCatRecord.name, aCatRecord.country_code, aCatRecord.year_establishment, aCatRecord.head, aCatRecord.ears, aCatRecord.eyes, aCatRecord.tail, aCatRecord.primary_color, aCatRecord.secondary_color, aCatRecord.prefered_color, aCatRecord.fur, aCatRecord.image, aCatRecord.males_size, aCatRecord.females_size, aCatRecord.personality);
                                                 myConnection.Open();
                 var myCommand                   = new SqlCommand(sqlIns, myConnection);
@@ -127,12 +112,16 @@ namespace AspProjectApplication.Framework.IO
             catch (InvalidOperationException ex)
             {
                 errorsTextBox.Text              += "Получи се проблем при вмъкването на данни в CatBreedInfo.Вероятна причини за това са: \n 1.Съществуване на вече наличен запис \n 2.Конфликт между пръвичен ключе и външен ключ за таблици, които са в реалиця \n" + ex.Message + "\n\n\n\n\n\n\n\n\n";
+            } 
+            finally
+            {
+                myConnection.Close();
             }
 
             //Тук правим опит за вкарване на запис в ConnectingTable И евентуално прихващаме изключение ако вече съществува такъв запис
             try
             {
-                var myConnection = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
+               
                 var sqlIns = string.Format("INSERT ConnectingTable (categoty_number, breed_number, group_number) VALUES ('{0}','{1}','{2}')", aCatRecord.section, aCatRecord.standart_number, aCatRecord.group);
                 myConnection.Open();
                 var myCommand = new SqlCommand(sqlIns, myConnection);
@@ -145,6 +134,10 @@ namespace AspProjectApplication.Framework.IO
             catch (InvalidOperationException ex)
             {
                 errorsTextBox.Text += "Получи се проблем при вмъкването на данни в ConnectingTable.Вероятна причина за това е вече наличен запис \n" + ex.Message + "\n\n\n\n\n";
+            }
+            finally
+            {
+                myConnection.Close();
             }
 
 

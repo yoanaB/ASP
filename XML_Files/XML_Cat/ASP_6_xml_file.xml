@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="MAU" group="groupD" category="cat3">
+      <name>Египетска мау</name>
+      <country capital="Кайро" official_language="арабски" time_zone="UTC/GMT  +2 hours" currency="египетска лира" country_code="EGP">
+        <country_name>Египет</country_name>
+        <country_continent>Африка</country_continent>
+        <country_government_type>република</country_government_type>
+      </country>
+      <year_of_establishment>1992</year_of_establishment>
+      <head>Главата на египетската мау е кръгла.</head>
+      <ears> Ушите са остри, разположени са на голямо разстояние едно от друго.</ears>
+      <eyes> Очите на египетската мау са искрящо зелени на цвят.</eyes>
+      <tail>Опашката е средна на дължина, като към края си се стеснява и е с остър край. Козината на египетската мау е къса. Тя варира в няколко цвята.</tail>
+      <colors>
+        <primary_color>светлосив с петна</primary_color>
+        <secondary_color>сив</secondary_color>
+        <prefered_color>сребрист</prefered_color>
+      </colors>
+      <fur>Козината на египетската мау е къса. Тя варира в няколко цвята.</fur>
+      <image>http://gradcontent.com/lib/500x350/egyptian-mau3.jpg</image>
+      <size>
+        <males_size>5</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality>Египетската мау е изключително интелигентно животно, което с радост ще се включи в обучението, ако то се основава на игри и похвали, придружени с лакомство. </personality>
+    </cat_breed>
+	
+	<cat_breed standart_number="NFO" group="groupB" category="cat2">
+      <name>Нормежка горска котка</name>
+      <country capital="Берлин" official_language="немски" time_zone="UTC/GMT  -2 hours" currency="евро" country_code="GER">
+        <country_name>Германия</country_name>
+        <country_continent>Европа</country_continent>
+        <country_government_type></country_government_type>
+      </country>
+      <year_of_establishment>1959</year_of_establishment>
+      <head>относително голяма, широка, с трапецовидна форма.</head>
+      <ears>средно големи, широки в основата, с форма на равностранен триъгълник, като в края са леко закръглени и имат снопчета от косми на върха.</ears>
+      <eyes>широко поставени, средно големи, с овална или бадемовидна форма, като обагрянето им хармонира с окраската на козината.</eyes>
+      <tail>средно дълга, дебела в основата, изтъняваща и затьпена в края.</tail>
+      <colors>
+        <primary_color>агути-фактор</primary_color>
+        <secondary_color>агути фактор с бяло</secondary_color>
+        <prefered_color>агути-фактор</prefered_color>
+      </colors>
+      <fur> Козината им не изисква старателно ресане, тъй като тя сама поддържа чистотата и порядъка й.</fur>
+      <image>http://www.kotkite.com/img/articles/thumbs/3107070742_6_.jpg</image>
+      <size>
+        <males_size>6</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality>притежава силно изразен майчински инстинкт. </personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat3">напълно разпознати котки 3</category>
+    <category category_id="cat2">напълно разпознати котки 2</category>
+  </categories>
+  <groups>
+    <group group_code="groupD">редки котки</group>
+    <group group_code="groupB">екзотични котки</group>
+  </groups>
+</fif>

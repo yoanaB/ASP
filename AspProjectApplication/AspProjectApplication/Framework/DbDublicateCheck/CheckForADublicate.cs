@@ -36,7 +36,7 @@ namespace AspProjectApplication.Framework.DbDublicateCheck
         }
 
         /// <summary>
-        /// Това е функцията, която приема като аргумент име на секция и проверява дали вече имам такава секция въведана в базата от данни(SectionInfo)
+        /// Това е функцията, която приема като аргумент име на секция и проверява дали вече имам такава категория въведана в базата от данни(SectionInfo)
         /// </summary>
         /// <param name="aSection"></param>
         /// <returns></returns>
@@ -46,7 +46,7 @@ namespace AspProjectApplication.Framework.DbDublicateCheck
             try
             {
                 var myConnection            = new SqlConnection(@"Data Source=.;Initial Catalog=Cat_DB;Integrated Security=True");
-                var sqlSelect               = string.Format("SELECT * FROM SectionInfo WHERE section_id = '{0}'", aSection);
+                var sqlSelect               = string.Format("SELECT * FROM CategoryInfo WHERE category_id = '{0}'", aSection);
 
                                             myConnection.Open();
 

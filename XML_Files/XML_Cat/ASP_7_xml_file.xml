@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="OSH" group="groupD" category="cat4">
+      <name>Ориенталска късокосместа</name>
+      <country capital="Берлин" official_language="немски" time_zone="UTC/GMT  -2 hours" currency="евро" country_code="GER">
+        <country_name>Германия</country_name>
+        <country_continent>Европа</country_continent>
+        <country_government_type></country_government_type>
+      </country>
+      <year_of_establishment>1959</year_of_establishment>
+      <head>Главата е средно голяма, с клиновидна форма, дълга, с тясна муцуна и със забележимо издадена напред брадичка. </head>
+      <ears>Ушите са големи, широки в основата, като краищата им са леко заострени. </ears>
+      <eyes> Очите са широко поставени, средно големи, с бадемовидна форма, с яркозелен цвят (само белите са с яркосин цвят), косо по отношение на носа. </eyes>
+      <tail>Опашката е дълга, права, завършваща конусовидно. Козината е къса, нежна, блестяща, плътно прилепваща към тялото. </tail>
+      <colors>
+        <primary_color>кафяв</primary_color>
+        <secondary_color>черен</secondary_color>
+        <prefered_color>синя</prefered_color>
+      </colors>
+      <fur>Козината е къса, нежна, блестяща, плътно прилепваща към тялото.</fur>
+      <image>http://www.kotkite.com/img/articles/thumbs/0208070823_6_.jpg</image>
+      <size>
+        <males_size>5</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality>Ориенталските котки са много енергични, игриви и любопитни животни. За тяхното отглеждане е необходим просторен дом за движение и игри.</personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat4">напълно разпознати котки - 4</category>
+  </categories>
+  <groups>
+    <group group_code="groupD">редки котки</group>
+  </groups>
+</fif>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="BEN" group="groupB" category="cat3">
+      <name>Бенгалска котка</name>
+      <country capital="Лондон" official_language="английски" time_zone="UTC/GMT  -2 hours" currency="паунд" country_code="GBR">
+        <country_name>Великобритания</country_name>
+        <country_continent>Европа</country_continent>
+        <country_government_type>кралство</country_government_type>
+      </country>
+      <year_of_establishment>1960</year_of_establishment>
+      <head> Главата на бенгалската котка е с клиновидна форма, но с овален контур. </head>
+      <ears> Ушите не са особено големи и са заоблени.</ears>
+      <eyes> Очите на бенгалската котка са овални или бадемовидни. Те са големи и се допускат всички цветове освен синия.</eyes>
+      <tail>Опашката е дебела, не много дълга, като в края си се стеснява и има черно петно в заобления си край. </tail>
+      <colors>
+        <primary_color>златиста</primary_color>
+        <secondary_color>кафява</secondary_color>
+        <prefered_color>черна</prefered_color>
+      </colors>
+      <fur>Козината на бенгалската котка е гъста, много мека, като при младите животни може да е по-дълга. Основното, което отличава бенгалските котки от другите породи, са петната по козината,</fur>
+      <image>http://www.catbg.net/domashni/pictures/Porodi/british_short/british3.jpg</image>
+      <size>
+        <males_size>7</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality>Бенгалската котка е изключително умно същество. </personality>
+    </cat_breed>
+	<cat_breed standart_number="SOM" group="groupB" category="cat1">
+      <name>Сомали</name>
+	  <country capital="Лондон" official_language="английски" time_zone="UTC/GMT  -2 hours" currency="паунд" country_code="GBR">
+	    <country_name>Великобритания</country_name>
+	    <country_continent>Европа</country_continent>
+	    <country_government_type>кралство</country_government_type>
+	  </country>
+      <year_of_establishment>1960</year_of_establishment>
+      <head>с формата на обърнат триъгълник.</head>
+      <ears> Ушите са едри и в тях може да има кичури козина. </ears>
+      <eyes>  разположени леко скосено и са овални.</eyes>
+      <tail>опашката е дълга и пухкава.</tail>
+      <colors>
+        <primary_color>бял с червени петна</primary_color>
+        <secondary_color></secondary_color>
+        <prefered_color></prefered_color>
+      </colors>
+      <fur>Козината му е дълга и пухкава, искрящо бяла, с кафеникави или черни петна по главата.</fur>
+      <image>http://gradcontent.com/lib/500x350/turkish-van1.jpg</image>
+      <size>
+        <males_size>8</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality>котка с независим характер и понякога взима самостоятелни решения.</personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat3">напълно разпознати котки 3</category> 
+	<category category_id="cat1">напълно разпознати котки 1</category>
+  </categories>
+  <groups>
+    <group group_code="groupB">екзотични котки</group>
+  </groups>
+</fif>

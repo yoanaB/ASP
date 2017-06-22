@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="PER" group="groupA" category="cat1">
+      <name>Персийска котка</name>
+      <country capital="Техеран" official_language="фарси" time_zone="UTC/GMT  +3 hours" currency="ирански риал" country_code="IRN">
+        <country_name>Иран</country_name>
+        <country_continent>Азия</country_continent>
+        <country_government_type>република</country_government_type>
+      </country>
+      <year_of_establishment>1949</year_of_establishment>
+      <head>Характерна е сплесканата муцуна с малък и широк нос, изпъкнали скули и масивна брадичка. Погледнати в профил челото и брадичката са в една вертикална линия. </head>
+      <ears>Ушите са малки, със заоблени върхове, странично и ниско поставени. Челото е високо и заоблено отгоре.</ears>
+      <eyes>това са котки с открит поглед при който горната линия на гъбата на носа се намира малко под долната мислена линия на очите, които трябва да са кръгли и широко отворени. </eyes>
+      <tail>Къса, права без дефекти (възли) и дебела в основата си. Силно и равномерно окосмена.
+</tail>
+      <colors>
+        <primary_color>черен</primary_color>
+        <secondary_color>бял</secondary_color>
+        <prefered_color>син</prefered_color>
+      </colors>
+      <fur>Дълга и мека, гъста и обилна, коприненоподобна, неприлепваща по тялото; чиста и разресана. Силно окосмяване на бузите, оприличаващо го на "бакенбарди" и около шията образува ефектна яка, която надолу към гърдите преминава към богато "жабо". На корема е дълга и много мека. Козината трябва да бъде чиста, искряща, стояща като леко наелектризирана. Мазната козина свидетелства за недостатъчно балансирано хранене, недостатъчна поддръжка и изложбена подготовка.</fur>
+      <image>
+      </image>
+      <size>
+        <males_size>4</males_size>
+        <females_size>5</females_size>
+      </size>
+      <personality>Къса, права без дефекти (възли) и дебела в основата си. Силно и равномерно окосмена.
+</personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat1">Напълно разпознати котки - 1</category>
+  </categories>
+  <groups>
+    <group group_code="groupA">нови породи</group>
+  </groups>
+</fif>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="TUV" group="groupB" category="cat1">
+      <name>Турски ван</name>
+      <country capital="" official_language="" time_zone="UTC/GMT  -2 hours" currency="" country_code="GBR">
+        <country_name></country_name>
+        <country_continent></country_continent>
+        <country_government_type>кралство</country_government_type>
+      </country>
+      <year_of_establishment>1960</year_of_establishment>
+      <head> Главата на Турски Ван е с формата на обърнат триъгълник.</head>
+      <ears> Ушите на Турски Ван са едри и в тях може да има кичури козина. </ears>
+      <eyes> Очите са разположени леко скосено и са овални.</eyes>
+      <tail>опашката е дълга и пухкава.</tail>
+      <colors>
+        <primary_color>бял с червени петна</primary_color>
+        <secondary_color></secondary_color>
+        <prefered_color></prefered_color>
+      </colors>
+      <fur>Козината му е дълга и пухкава, искрящо бяла, с кафеникави или черни петна по главата.</fur>
+      <image>http://gradcontent.com/lib/500x350/turkish-van1.jpg</image>
+      <size>
+        <males_size>8</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality>котка с независим характер и понякога взима самостоятелни решения.</personality>
+    </cat_breed>
+	<cat_breed standart_number="ACL" group="groupC" category="cat4">
+      <name>Американска дългокосместа</name>
+	  <country capital="Кайро" official_language="арабски" time_zone="UTC/GMT  +2 hours" currency="египетска лира" country_code="EGP">
+	    <country_name>Египет</country_name>
+	    <country_continent>Африка</country_continent>
+	    <country_government_type>република</country_government_type>
+	  </country>
+      <year_of_establishment>2000</year_of_establishment>
+      <head></head>
+      <ears>Характерни са големите уши</ears>
+      <eyes> Очите са искрящо сини на цвят.</eyes>
+      <tail></tail>
+      <colors>
+        <primary_color></primary_color>
+        <secondary_color></secondary_color>
+        <prefered_color></prefered_color>
+      </colors>
+      <fur>голо тяло</fur>
+      <image>http://e4p-bg.com/wp-content/uploads/2014/09/Sphynx_1.jpg</image>
+      <size>
+        <males_size>5</males_size>
+        <females_size>4</females_size>
+      </size>
+      <personality>Ако сте решили да си вземете такава котка, не забравяйте – тя не счита себе си за котка! </personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat4">напълно разпознати котки 4</category>
+	<category category_id="cat1">напълно разпознати котки 1</category>
+  </categories>
+  <groups>
+    <group group_code="groupB">екзотични котки</group>
+    <group group_code="groupC">късокосмести котки</group>
+  </groups>
+</fif>

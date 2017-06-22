@@ -51,16 +51,17 @@ namespace AspProjectApplication.Framework.ButtonClickEvents
                 InsertCatBreedRecord.InsertAcatRecordIntoTheDataBase(myCatRec, errTextBox, false );
 
                 //След това създаваме XML документ, валиден за посоченото DTD и го попълваме с въведените данни
-                InsertCatBreedRecord.CreateValidXmlDocument(snInput,grInput,secInput,brNameInput,cntrCapInput,
-                                                            offLangInput,tZoneInput,currInput,cntryCodeInput,
-                                                            cntrNameInput, cntryContinentInput, govTypeInput,
-                                                            yearEstInput,headFrmInput, persInput, earsFormInput, 
-                                                            eyesFormInput,tailFormInput,primColInput,secColInput,
-                                                            prefColInput,furFormInput,imgInput,mSizeInput,fSizeInput,
-                                                            secDescrInput,grDescrInput);
+                
             }
             else
             {
+                InsertCatBreedRecord.CreateValidXmlDocument(snInput, grInput, secInput, brNameInput, cntrCapInput,
+                                                            offLangInput, tZoneInput, currInput, cntryCodeInput,
+                                                            cntrNameInput, cntryContinentInput, govTypeInput,
+                                                            yearEstInput, headFrmInput, persInput, earsFormInput,
+                                                            eyesFormInput, tailFormInput, primColInput, secColInput,
+                                                            prefColInput, furFormInput, imgInput, mSizeInput, fSizeInput,
+                                                            secDescrInput, grDescrInput);
                 sbmtResLabel.Text =
                     "Записът е валиден \n Но няма да бъде въведен в БД защото вече същестува такъв запис!";
                 sbmtResLabel.ForeColor      = System.Drawing.Color.Lime;

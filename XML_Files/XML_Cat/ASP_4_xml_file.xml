@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="GRX" group="groupC" category="cat4">
+      <name>Немски рекс</name>
+      <country capital="Берлин" official_language="немски" time_zone="UTC/GMT  -2 hours" currency="евро" country_code="GER">
+        <country_name>Германия</country_name>
+        <country_continent>Европа</country_continent>
+        <country_government_type></country_government_type>
+      </country>
+      <year_of_establishment>1982</year_of_establishment>
+      <head>кръглата широка глава.</head>
+      <ears>Ушите са на голямо разстояние едно от друго, със заоблени върхове и с мека гъста козина от външната страна. </ears>
+      <eyes> красивите кръгли очи, които са в тон с цвета на козината</eyes>
+      <tail>Опашката е плътна, с дълги косми.</tail>
+      <colors>
+        <primary_color>в един тон</primary_color>
+        <secondary_color>в съчетание с бяло</secondary_color>
+        <prefered_color></prefered_color>
+      </colors>
+      <fur> Козината на Немски Рекс на пипане е като кадифе. Тя е много къса и леко вълнообразна. Гъстотата й варира от тънка мека покривка до плътна равномерна структура.</fur>
+      <image>http://gradcontent.com/lib/600x350/german-rex.jpg</image>
+      <size>
+        <males_size>6</males_size>
+        <females_size>5</females_size>
+      </size>
+      <personality>Опашката е плътна, с дълги косми.</personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat4">напълно разпознати котки - 4</category>
+  </categories>
+  <groups>
+    <group group_code="groupC">късокосмести котки</group>
+  </groups>
+</fif>

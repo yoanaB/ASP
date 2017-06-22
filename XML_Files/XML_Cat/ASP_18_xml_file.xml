@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fif SYSTEM "file:/D:/Documents/ASP/AspProject_YoanaBoyanova_71540_sourceCode/XML_Files/cat_breeds.dtd">
+<fif>
+  <cat_breeds>
+    <cat_breed standart_number="RAG" group="groupB" category="cat1">
+      <name>Регдол</name>
+      <country capital="Вашингтон" official_language="английски" time_zone="UTC/GMT  -7 hours" currency="долар" country_code="USA">
+        <country_name>САЩ</country_name>
+        <country_continent>Северна Америка</country_continent>
+        <country_government_type>феерална република</country_government_type>
+      </country>
+      <year_of_establishment>1991</year_of_establishment>
+      <head>Главата е дълга, с клиновидна форма, с широк череп и ясно изразени дебели бузи.</head>
+      <ears>
+      </ears>
+      <eyes> Очите са едри, с овална форма, сини на цвят. </eyes>
+      <tail>
+      </tail>
+      <colors>
+        <primary_color>едноцветни</primary_color>
+        <secondary_color>бели лапи</secondary_color>
+        <prefered_color>двуцветни</prefered_color>
+      </colors>
+      <fur>Космената покривка е мека и гъста, по структура напомня на заешка козина, като нейната плътност зависи от сезона.</fur>
+      <image>http://www.kotkite.com/img/articles/0108070316_6_.jpg</image>
+      <size>
+        <males_size>10</males_size>
+        <females_size>8</females_size>
+      </size>
+      <personality>
+      </personality>
+    </cat_breed>
+  </cat_breeds>
+  <categories>
+    <category category_id="cat1">напълно разпознати котки - 1</category>
+  </categories>
+  <groups>
+    <group group_code="groupB">екзотични котки</group>
+  </groups>
+</fif>
